@@ -1,0 +1,26 @@
+---
+title: "Funciones, límites y continuidad."
+---
+
+## Algunos aspectos de Lógica
+
+> Un astrónomo, un físico y un matemático viajaban en un tren por Escocia. Vieron por la ventana un rebaño de ovejas que pastaban en un prado. El astrónomo observó: «En Escocia todas las ovejas son negras!» El físico protestó: «Algunas ovejas de Escocia son negras». El matemático declaró: «En Escocia existe un rebaño de ovejas, todas las cuales son negras al menos de un lado!».
+
+### Proposiciones
+
+Hallar una solución a la ecuación:
+
+$$
+x+2=\sqrt{4-x}
+$$
+
+### Implicaciones
+
+$$
+P\Rightarrow Q
+$$
+
+### Condiciones necesarias
+
+### Resolución de ecuaciones
+

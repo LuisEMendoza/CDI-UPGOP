@@ -327,30 +327,56 @@ $(document).ready(function () {
 </div>
 
 
-<div id="algunos-aspectos-de-lógica" class="section level2">
-<h2>Algunos aspectos de Lógica</h2>
+<div id="funciones" class="section level2">
+<h2>Funciones</h2>
+<p>La aplicación de las matemáticas yace en la capacidad de identificar una representación relevante de un fenómeno del mundo real. Esta relación a menudo es conocida como un <strong>modelo matemático</strong>. Uno de dichos modelos, en caso de contar con un par de variables que se encuentran relacionadas entre sí, permite determinar el comportamiento de una si conocemos el de la otra. A este tipo de relaciones, si son relevantes, las conocemos como <strong>funciones matemáticas</strong> o simplemente <strong>funciones</strong>.</p>
+<p>Consideraremos una función como un dispositivo de entrada/salida. A un <em>dato de entrada</em> se le aplica la regla matemática que lo transforma en un <em>dato de salida</em> específico. Por ejemplo, pensemos en la expresión <span class="math inline">\(y=x^2+3x-5\)</span>, la cual es la regla matemática transformadora de la función. Ahora bien, introduzcamos valores de entrada arbitrarios, los cuales los identificaremos como valores de <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+x=-4\\ x=-3\\ x=-2\\ x=-1\\ x=0\\ x=1
+\]</span></p>
+<p>Estos valores son transformados por la función, arrojando valores de salida que <em>dependen</em> del dato de entrada introducido. Para el primer caso, el dato de salida se obtiene como:</p>
+<p><span class="math display">\[
+y=(-4)^2+3(-4)-5=16-12-5=-1
+\]</span></p>
+<p>Para el segundo valor, tenemos que:</p>
+<p><span class="math display">\[
+y=(-3)^2+3(-3)-5=9-9-5=-5
+\]</span></p>
+<p>Para el tercer dato de entrada:</p>
+<p><span class="math display">\[
+y=(-2)^2+3(-2)-5=4-6-5=-7
+\]</span></p>
+<p>Para el cuarto dato de entrada:</p>
+<p><span class="math display">\[
+y=(-1)^2+3(-1)-5=1-3-5=-7
+\]</span></p>
+<p>Para el quinto dato de entrada:</p>
+<p><span class="math display">\[
+y=(0)^2+3(0)-5=0-0-5=-5
+\]</span></p>
+<p>Para el último dato de entrada:</p>
+<p><span class="math display">\[
+y=(1)^2+3(1)-5=1+3-5=-1
+\]</span></p>
+<p>Así, tenemos que:</p>
+<p><span class="math display">\[
+Para\ x=-4,\ y=-1\\
+Para\ x=-3,\ y=-5\\
+Para\ x=-2,\ y=-7\\
+Para\ x=-1,\ y=-7\\
+Para\ x=0,\ y=-5\\
+Para\ x=1,\ y=-1\\
+\]</span></p>
+<p>Como quizá recordemos, una ecuación cuadrática tiene por representación gráfica una línea curva conocida como parábola. Si la elaboramos, relacionando cada dato de entrada con su respectivo dato de salida e identificando cada par resultante por una letra, quedaría como se muestra en la siguiente figura:</p>
+<p><img src="images/funciones-001.png" /> Notemos pues que para cada dato de entrada le corresponde solo un dato de salida. Esto es la definición de <strong>función</strong>:</p>
 <blockquote>
-<p>Un astrónomo, un físico y un matemático viajaban en un tren por Escocia. Vieron por la ventana un rebaño de ovejas que pastaban en un prado. El astrónomo observó: «En Escocia todas las ovejas son negras!» El físico protestó: «Algunas ovejas de Escocia son negras». El matemático declaró: «En Escocia existe un rebaño de ovejas, todas las cuales son negras al menos de un lado!».</p>
+<p>Una <strong>función</strong> es una regla matemática que asigna a cada valor de entrada <em>uno y solo un</em> valor de salida.</p>
 </blockquote>
-<div id="proposiciones" class="section level3">
-<h3>Proposiciones</h3>
-<p>Hallar una solución a la ecuación:</p>
-<p><span class="math display">\[
-x+2=\sqrt{4-x}
-\]</span></p>
-</div>
-<div id="implicaciones" class="section level3">
-<h3>Implicaciones</h3>
-<p><span class="math display">\[
-P\Rightarrow Q
-\]</span></p>
-</div>
-<div id="condiciones-necesarias" class="section level3">
-<h3>Condiciones necesarias</h3>
-</div>
-<div id="resolución-de-ecuaciones" class="section level3">
-<h3>Resolución de ecuaciones</h3>
-</div>
+<p>También podemos ya definir al conjunto de todos los valores de entrada y al conjunto de todos los valores de salida como:</p>
+<blockquote>
+<p>El <strong>dominio</strong> de una función es el conjunto de <em>todos los valores de entrada posibles</em>. El <strong>rango</strong> de una función es el conjunto de <em>todos los valores de salida posibles</em>.</p>
+</blockquote>
+<p>El proceso de asignación de valores de salida a sus correspondientes valores de entrada es conocido como <strong>mapeo</strong>. El mapeo de una función es válido mientras todos los valores de entrada tengan asignado un solo valor de salida. Incluso, puede darse el caso de que dos valores de entrada tengan el mismo valor de salida y el mapeo siga siendo válido. Lo que invalida el mapeo es cuando un dato de entrada tenga asignado más de dos valores de salida.</p>
 </div>
 
 

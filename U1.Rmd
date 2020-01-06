@@ -2,25 +2,73 @@
 title: "Funciones, límites y continuidad."
 ---
 
-## Algunos aspectos de Lógica
+## Funciones
 
-> Un astrónomo, un físico y un matemático viajaban en un tren por Escocia. Vieron por la ventana un rebaño de ovejas que pastaban en un prado. El astrónomo observó: «En Escocia todas las ovejas son negras!» El físico protestó: «Algunas ovejas de Escocia son negras». El matemático declaró: «En Escocia existe un rebaño de ovejas, todas las cuales son negras al menos de un lado!».
+La aplicación de las matemáticas yace en la capacidad de identificar una representación relevante de un fenómeno del mundo real. Esta relación a menudo es conocida como un __modelo matemático__. Uno de dichos modelos, en caso de contar con un par de variables que se encuentran relacionadas entre sí, permite determinar el comportamiento de una si conocemos el de la otra. A este tipo de relaciones, si son relevantes, las conocemos como __funciones matemáticas__ o simplemente __funciones__.
 
-### Proposiciones
-
-Hallar una solución a la ecuación:
+Consideraremos una función como un dispositivo de entrada/salida. A un _dato de entrada_ se le aplica la regla matemática que lo transforma en un _dato de salida_ específico. Por ejemplo, pensemos en la expresión $y=x^2+3x-5$, la cual es la regla matemática transformadora de la función. Ahora bien, introduzcamos valores de entrada arbitrarios, los cuales los identificaremos como valores de $x$: 
 
 $$
-x+2=\sqrt{4-x}
+x=-4\\ x=-3\\ x=-2\\ x=-1\\ x=0\\ x=1
 $$
 
-### Implicaciones
+Estos valores son transformados por la función, arrojando valores de salida que _dependen_ del dato de entrada introducido. Para el primer caso, el dato de salida se obtiene como:
 
 $$
-P\Rightarrow Q
+y=(-4)^2+3(-4)-5=16-12-5=-1
 $$
 
-### Condiciones necesarias
+Para el segundo valor, tenemos que:
 
-### Resolución de ecuaciones
+$$
+y=(-3)^2+3(-3)-5=9-9-5=-5
+$$
 
+Para el tercer dato de entrada:
+
+$$
+y=(-2)^2+3(-2)-5=4-6-5=-7
+$$
+
+Para el cuarto dato de entrada:
+
+$$
+y=(-1)^2+3(-1)-5=1-3-5=-7
+$$
+
+Para el quinto dato de entrada:
+
+$$
+y=(0)^2+3(0)-5=0-0-5=-5
+$$
+
+Para el último dato de entrada:
+
+$$
+y=(1)^2+3(1)-5=1+3-5=-1
+$$
+
+Así, tenemos que:
+
+$$
+Para\ x=-4,\ y=-1\\
+Para\ x=-3,\ y=-5\\
+Para\ x=-2,\ y=-7\\
+Para\ x=-1,\ y=-7\\
+Para\ x=0,\ y=-5\\
+Para\ x=1,\ y=-1\\
+$$
+
+Como quizá recordemos, una ecuación cuadrática tiene por representación gráfica una línea curva conocida como parábola. Si la elaboramos, relacionando cada dato de entrada con su respectivo dato de salida e identificando cada par resultante por una letra, quedaría como se muestra en la siguiente figura:
+
+![](images/funciones-001.png)
+Notemos pues que para cada dato de entrada le corresponde solo un dato de salida. Esto es la definición de __función__:
+
+> Una __función__ es una regla matemática que asigna a cada valor de entrada _uno y solo un_
+valor de salida.
+
+También podemos ya definir al conjunto de todos los valores de entrada y al conjunto de todos los valores de salida como:
+
+> El __dominio__ de una función es el conjunto de _todos los valores de entrada posibles_. El __rango__ de una función es el conjunto de _todos los valores de salida posibles_.
+
+El proceso de asignación de valores de salida a sus correspondientes valores de entrada es conocido como __mapeo__. El mapeo de una función es válido mientras todos los valores de entrada tengan asignado un solo valor de salida. Incluso, puede darse el caso de que dos valores de entrada tengan el mismo valor de salida y el mapeo siga siendo válido. Lo que invalida el mapeo es cuando un dato de entrada tenga asignado más de dos valores de salida.

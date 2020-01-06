@@ -1,5 +1,5 @@
 ---
-title: "Instituto Superior de Administración y Negocios"
+title: "Universidad Politécnica de Gómez Palacio"
 ---
 
 ![](images/logo.jpg)

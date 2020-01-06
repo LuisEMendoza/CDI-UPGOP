@@ -59,9 +59,10 @@ Para\ x=0,\ y=-5\\
 Para\ x=1,\ y=-1\\
 $$
 
-Como quizá recordemos, una ecuación cuadrática tiene por representación gráfica una línea curva conocida como parábola. Si la elaboramos, relacionando cada dato de entrada con su respectivo dato de salida e identificando cada par resultante por una letra, quedaría como se muestra en la siguiente figura:
+Como quizá recordemos, una ecuación cuadrática tiene por representación gráfica una línea curva conocida como parábola. Si la elaboramos, relacionando cada dato de entrada con su respectivo dato de salida e identificando cada par resultante, quedaría como se muestra en la siguiente figura:
 
 ![](images/funciones-001.png)
+
 Notemos pues que para cada dato de entrada le corresponde solo un dato de salida. Esto es la definición de __función__:
 
 > Una __función__ es una regla matemática que asigna a cada valor de entrada _uno y solo un_

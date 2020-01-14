@@ -142,6 +142,19 @@ $$
 [-2,2]
 $$
 
+### Aplicaciones selectas
+
+1. Se le ha contratado como vendedor de suscripciones o «cuponeras» en cierta empresa publicista, la cual le ofrece un sueldo base de $\$500.00$ y una comisión de $\$30.00$ por suscripción vendida. ¿Cuál es la función que representa su sueldo? ¿Cuál es el dominio de dicha función? Calcule su sueldo si consigue vender 10,15, 20 y 35 suscripciones.
+
+2. Una cláusula de su contrato especifica que su sueldo base será pagado solo cuando consiga vender más de 15 cuponeras. ¿Cómo se calcula su sueldo tomando en cuenta esta restricción?
+
+3. En una empresa del ramo metal-mecánico se considera la compra de un torno automático, con un costo de adquisición de $\$350,000.00$. El fabricante aclara que el costo operativo del mismo para cierto material es de $\$45.00$ por cada diez piezas maquinadas. ¿Cuál sería el costo del equipo si la empresa pretende elaborar 650 piezas?
+
+4. Una empresa que fabrica un solo producto se interesa en determinar la función que expresa el costo total anual y como una función del número de unidades fabricadas $x$. Los contadores indican que los gastos fijos cada año son de $\$50 000$. También estiman que los costos de la materia prima para cada unidad producida son $\$5.50$ y los costos de trabajo por unidad son $\$1.50$ en el departamento de ensamble, $\$0.75$ en el cuarto de acabado y $\$1.25$ en el departamento de empaque y distribución.
+
+5. Una empresa vende un solo producto en $\$65.00$ por unidad. Los costos variables por unidad son de $\$20.00$ por materiales y $\$27.50$ por trabajo. Los costos fijos anuales son $\$100,000.00$. Elabore la función de la utilidad expresada en términos de $x$, el número de unidades producidas y vendidas. ¿Cuál es la utilidad si las ventas anuales son $\$20,000.00$ unidades?
+
+
 
 
 

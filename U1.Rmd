@@ -88,6 +88,60 @@ Si la graficamos, la función tendría la siguiente representación:
 
 ![](images/funciones-002.png)
 
-Observemos que esta gráfica muestra una línea recta continua, ininterrumpida. No importa qué valor le asignemos a la $x$, siempre existirá la función en cuestión.
+Observemos que esta gráfica muestra una línea recta continua, ininterrumpida. No importa qué valor le asignemos a la $x$, siempre existirá la función en cuestión. Podemos concluir entonces que cualquier función lineal es una __función continua__.
 
-En este curso nos concentraremos en tres funciones que, con ciertos valores de entrada se vuelven indefinidas, es decir, se _rompen_ o dejan de existir. El primer caso es la división por cero. 
+Ahora bien, existen funciones no lineales que también son continuas, como las cuadráticas. Un ejemplo de éstas es la siguiente expresión:
+
+$$
+f(x)=x^2+10x-8
+$$
+
+No importa qué valor le demos a la variable, una función cuadrática como la anterior siempre será continua, aunque en este caso no se represente con una línea recta, sino curva. Más precisamente, una parábola:
+
+![](images/funciones-003.png)
+
+Veamos un tercer caso, una función exponencial. De esta función se ilustran dos tipos: una exponencial con una base numérica cualquiera y una exponencial con el _número de Euler_ como base:
+
+$$
+f(x)=5^x
+$$
+
+La gráfica resultante de esta función cualquiera es la siguiente:
+
+![Función exponencial](images/funciones-004.png)
+
+Podemos notar que esta función es continua, aunque también es notorio que su valor se dispara hacia el infinito en tanto que la variable $x$ se acerca a $2$; por otro lado, mientras la variable $x$ se vuelve cada vez más negativa, la función $f(x)$ se acerca a $0$, pero sin interrumpirse.
+
+Veamos el comportamiento de la función $f(x)=e^x$. Podemos asignarle valores a la variable $x$ y la función solo se dispara hacia el infinito en un determinado momento, tal como se observa en la gráfica:
+
+![Función $e^x$](images/funciones-005.png)
+
+Importante notar que las funciones vistas hasta ahora no tienen cortes. Por lo tanto, su dominio se corresponde con el conjunto de todos los números reales. Por ejemplo, el dominio de la función $f(x)=x-2$ se escribe de la siguiente manera:
+
+$$
+[-\infty, \infty]
+$$
+
+Y se lee como «el dominio de la función $f(x)$ se limita a, pero incluyendo, el infinito negativo y el infinito positivo», o bien, «el dominio de $f(x)$ va desde el infinito negativo hasta el infinito positivo».
+
+### Funciones discontinuas
+
+En este apartado nos concentraremos en tres funciones que, con ciertos valores de entrada se vuelven indefinidas, es decir, se _rompen_ o dejan de existir. El primer caso es la división por cero. En segundo, cualquier raíz par de cualquier número negativo, y por último, cualquier logaritmo natural con un argumento no natural.
+
+#### División por cero
+
+La función discontinua por excelencia, o al menos la primera que a muchos puede venirnos a la mente es precisamente la división por cero. Cuando esto ocurre, se da un absurdo matemático, es decir, es algo que no está definido. Para ilustrar este caso de función interrumpida, veamos la siguiente función:
+
+$$
+f(x)=\frac{1}{x}
+$$
+
+Vamos a afectar esta función con un dominio restringido por nosotros mismos:
+
+$$
+[-2,2]
+$$
+
+
+
+

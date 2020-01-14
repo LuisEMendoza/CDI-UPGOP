@@ -6,6 +6,8 @@ title: "Funciones, límites y continuidad."
 
 La aplicación de las matemáticas yace en la capacidad de identificar una representación relevante de un fenómeno del mundo real. Esta relación a menudo es conocida como un __modelo matemático__. Uno de dichos modelos, en caso de contar con un par de variables que se encuentran relacionadas entre sí, permite determinar el comportamiento de una si conocemos el de la otra. A este tipo de relaciones, si son relevantes, las conocemos como __funciones matemáticas__ o simplemente __funciones__.
 
+### Introducción
+
 Consideraremos una función como un dispositivo de entrada/salida. A un _dato de entrada_ se le aplica la regla matemática que lo transforma en un _dato de salida_ específico. Por ejemplo, pensemos en la expresión $y=x^2+3x-5$, la cual es la regla matemática transformadora de la función. Ahora bien, introduzcamos valores de entrada arbitrarios, los cuales los identificaremos como valores de $x$: 
 
 $$
@@ -73,3 +75,19 @@ También podemos ya definir al conjunto de todos los valores de entrada y al con
 > El __dominio__ de una función es el conjunto de _todos los valores de entrada posibles_. El __rango__ de una función es el conjunto de _todos los valores de salida posibles_.
 
 El proceso de asignación de valores de salida a sus correspondientes valores de entrada es conocido como __mapeo__. El mapeo de una función es válido mientras todos los valores de entrada tengan asignado un solo valor de salida. Incluso, puede darse el caso de que dos valores de entrada tengan el mismo valor de salida y el mapeo siga siendo válido. Lo que invalida el mapeo es cuando un dato de entrada tenga asignado más de dos valores de salida.
+
+### Funciones continuas
+
+Existe una buena cantidad de funciones que podemos considerar continuas. Esto se refiere a funciones que no dejan de existir, o que desde un punto de vista geométrico, pueden ser representadas por una línea ininterrumpida, sin cortes. Un buen ejemplo sería cualquier función lineal, tal como:
+
+$$
+f(x)=x-2
+$$
+
+Si la graficamos, la función tendría la siguiente representación:
+
+![](images/funciones-002.png)
+
+Observemos que esta gráfica muestra una línea recta continua, ininterrumpida. No importa qué valor le asignemos a la $x$, siempre existirá la función en cuestión.
+
+En este curso nos concentraremos en tres funciones que, con ciertos valores de entrada se vuelven indefinidas, es decir, se _rompen_ o dejan de existir. El primer caso es la división por cero. 

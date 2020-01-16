@@ -142,7 +142,7 @@ $$
 [-2,2]
 $$
 
-### Aplicaciones selectas
+### Aplicaciones selectas de funciones
 
 1. Se le ha contratado como vendedor de suscripciones o «cuponeras» en cierta empresa publicista, la cual le ofrece un sueldo base de $\$500.00$ y una comisión de $\$30.00$ por suscripción vendida. ¿Cuál es la función que representa su sueldo? ¿Cuál es el dominio de dicha función? Calcule su sueldo si consigue vender 10,15, 20 y 35 suscripciones.
 
@@ -153,6 +153,24 @@ $$
 4. Una empresa que fabrica un solo producto se interesa en determinar la función que expresa el costo total anual y como una función del número de unidades fabricadas $x$. Los contadores indican que los gastos fijos cada año son de $\$50 000$. También estiman que los costos de la materia prima para cada unidad producida son $\$5.50$ y los costos de trabajo por unidad son $\$1.50$ en el departamento de ensamble, $\$0.75$ en el cuarto de acabado y $\$1.25$ en el departamento de empaque y distribución.
 
 5. Una empresa vende un solo producto en $\$65.00$ por unidad. Los costos variables por unidad son de $\$20.00$ por materiales y $\$27.50$ por trabajo. Los costos fijos anuales son $\$100,000.00$. Elabore la función de la utilidad expresada en términos de $x$, el número de unidades producidas y vendidas. ¿Cuál es la utilidad si las ventas anuales son $\$20,000.00$ unidades?
+
+6. Cuando las organizaciones compran equipo, vehículos, construcciones y otros tipos de “activos de capital”, los contadores por lo regular asignan el costo del artículo al periodo en que se usa el artículo. Para un equipo que cuesta $\$200,000$ y que tiene una vida útil de 5 años, los contadores podrían asignar $\$40,000$ por año como un costo de posesión del camión. El costo asignado a cualquier periodo dado recibe el nombre de __depreciación__. ¿Cuál es la función que represente este caso y cuál es su dominio?
+
+7. La función de demanda de un producto es:
+
+$$
+q=f(p)
+$$
+Donde _q_ es la cantidad de productos demandados y _q_ es el precio por unidad. Para un producto dado, se sabe que la demanda disminuye 50 unidades por cada peso que aumenta su precio, y que la demanda teórica es es de 1,500 unidades a precio nulo (lo cual no siempre es algo real). Primero defina la función lineal que representa la demanda.
+
+Enseguida, considere que el ingreso total _R_ de la venta de _q_ unidades a un precio _p_ es una función de la forma:
+
+$$
+R=pq
+$$
+¿Cuál es la función que nos permite calcular los ingresos por ventas? ¿Cuál es el dominio de dicha función?
+
+
 
 
 

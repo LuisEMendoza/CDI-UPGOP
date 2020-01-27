@@ -170,9 +170,113 @@ R=pq
 $$
 ¿Cuál es la función que nos permite calcular los ingresos por ventas? ¿Cuál es el dominio de dicha función?
 
+## Límites
 
+Encontrar el límite de una función consiste básicamente en calcular el valor al que la función se acerca conforme la variable independiente se acerca a un valor específico. Se representa de la siguiente manera:
 
+$$
+\lim_{x\rightarrow a} f(x)=L
+$$
 
+Para comprobar su existencia, basta con calcular el límite por los dos lados y que este sea el mismo para ambos. Es decir, acercándose por la izquierda y por la derecha al valor específico de la variable. O sea, el límite existe cuando:
+
+$$
+\lim_{x\to a^+}f(x)=\lim_{x\to a^-}f(x)=L
+$$
+
+### Límite de funciones continuas
+
+Tomando en cuenta lo anterior, podemos decir que al momento de calcular el límite de una función cuando la variable se acerca a cierto valor, y sabemos que es continua para ese valor, entonces basta con sustituirlo en la función. Por ejemplo, para el siguiente límite:
+
+$$
+\lim_{x\to 2}(x^2+4)
+$$
+
+sabemos que la función es continua en todo momento, y más especifícamente para cuando $x=2$. Por lo tanto, basta con sustituir tal valor en la función y desarrollarla. El resultado será el límite de dicha función.
+
+$$
+\lim_{x\to 2}(x^2+4)=[(2)^2+4]=8
+$$
+
+Comprobemos la existencia de dicho límite. Para ello tomamos valores cada vez más cercanos a $2$ para $x$, acercándonos desde la izquierda y tabulando:
+
+![](images/limites-001.png)
+
+y tabulamos desde la derecha:
+
+![](images/limites-002.png)
+
+Como podemos apreciar, aunque en realidad no se llega a tocar exactamente el valor límite ($8$), nos acercamos bastante al mismo, por ambos lados. Por lo tanto, podemos asegurar que el límite sí existe para esta función y es igual a $8$.
+
+### Límite de funciones discontinuas
+
+En este caso debemos recordar el hecho de que las funciones discontinuas lo son en momentos específicos y no necesariamente todo el tiempo. Por ejemplo, las funciones que implican divisiones pueden volverse indefinidas solo cuando la variable haga que el denominador se vuelva nulo. Por esta razón, la recomendación implica más bien sustituir siempre el valor al que tienda la variable. Si esta sustitución deja la función indefinida, consideremos otro método: la tabulación, ya abordada con anterioridad.
+
+Tomemos como ejemplo la obtención del siguiente límite:
+
+$$
+\lim_{x \to 3} \frac{5}{x+6}
+$$
+En este caso, sabemos que la función es discontinua en algún momento. Pero _no_ lo es para el valor al que tiende nuestra variable $x$. Por lo tanto podemos sustituir tranquilamente:
+
+$$
+\lim_{x \to 3} \frac{5}{x+6}=\frac{5}{(3)+6}=\frac{5}{9}
+$$
+
+El asunto cambia cuando la función se vuelve discontinua exactamente con el valor al que tienda $x$. Por ejemplo, el siguiente caso:
+
+$$
+\lim_{x \to 5} \frac{2x}{5-x}
+$$
+
+Aquí notamos que al sustituir el $5$ se da la discontinuidad para la función:
+
+$$
+\lim_{x \to 5} \frac{2x}{5-x}=\frac{2(5)}{5-(5)}=\frac{10}{0}=indefinido
+$$
+
+Un límite no puede ser _indefinido_. Debemos especificar el valor al que tiende la variable, obligatoriamente. Para ello, hacemos uso de la tabulación con valores cada más cercanos a $5$ y posteriormente comprobamos el límite como tal. Lo anterior implica obtener el límite tanto por la izquierda:
+
+![](images/limites-003.png)
+
+ como por la derecha:
+ 
+ ![](images/limites-004.png)
+
+Vemos que sin importar por cual lado nos acerquemos, no obtenemos el mismo resultado. Sin embargo, el comportamiento es el mismo para la función, su valor se dispara hacia el infinito (por ambos lados y hacia ambos lados) conforme nos acercamos cada vez más al $5$. Por lo tanto, concluimos que:
+
+$$
+\lim_{x \to 5} \frac{2x}{5-x}=\infty
+$$
+
+Podemos resolver algunos límites utilizando algún artificio matemático, como el desarrollo algebraico de las expresiones, su simplificación o factorización. Veamos un ejemplo. Calculemos el siguiente límite:
+
+$$
+\lim_{x \to -4} \frac{x+4}{x^2-16}
+$$
+
+Si simplemente sustituímos notaremos que el límite es indefinido:
+
+$$
+\lim_{x \to -4} \frac{x+4}{x^2-16}=\frac{(-4)+4}{(-4)^2-16}=\frac{0}{16-16}=\frac{0}{0}=indefinido
+$$
+Antes de pensar en tabular, notemos que existe una especie de relación entre el denominador y el numerador, además de que el primero es factorizable. Recordemos por álgebra que:
+
+$$
+x^2-16=(x-4)(x+4)
+$$
+
+Esto es una diferencia de cuadrados. Y nos permite simplificar la expresión con el numerador:
+
+$$
+\frac{x+4} {x^2-16} = \frac{x+4} {(x-4)(x+4)} = \frac{1} {x-4}
+$$
+
+Así, ya podemos sustituir el valor:
+
+$$
+\lim_{x \to -4} \frac{1} {x-4}= \frac{1}{(-4)-4} = \frac{1}{-8}=-\frac{1}{8}
+$$
 
 
 

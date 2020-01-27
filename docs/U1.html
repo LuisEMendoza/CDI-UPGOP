@@ -446,6 +446,79 @@ R=pq
 \]</span> ¿Cuál es la función que nos permite calcular los ingresos por ventas? ¿Cuál es el dominio de dicha función?</p>
 </div>
 </div>
+<div id="límites" class="section level2">
+<h2>Límites</h2>
+<p>Encontrar el límite de una función consiste básicamente en calcular el valor al que la función se acerca conforme la variable independiente se acerca a un valor específico. Se representa de la siguiente manera:</p>
+<p><span class="math display">\[
+\lim_{x\rightarrow a} f(x)=L
+\]</span></p>
+<p>Para comprobar su existencia, basta con calcular el límite por los dos lados y que este sea el mismo para ambos. Es decir, acercándose por la izquierda y por la derecha al valor específico de la variable. O sea, el límite existe cuando:</p>
+<p><span class="math display">\[
+\lim_{x\to a^+}f(x)=\lim_{x\to a^-}f(x)=L
+\]</span></p>
+<div id="límite-de-funciones-continuas" class="section level3">
+<h3>Límite de funciones continuas</h3>
+<p>Tomando en cuenta lo anterior, podemos decir que al momento de calcular el límite de una función cuando la variable se acerca a cierto valor, y sabemos que es continua para ese valor, entonces basta con sustituirlo en la función. Por ejemplo, para el siguiente límite:</p>
+<p><span class="math display">\[
+\lim_{x\to 2}(x^2+4)
+\]</span></p>
+<p>sabemos que la función es continua en todo momento, y más especifícamente para cuando <span class="math inline">\(x=2\)</span>. Por lo tanto, basta con sustituir tal valor en la función y desarrollarla. El resultado será el límite de dicha función.</p>
+<p><span class="math display">\[
+\lim_{x\to 2}(x^2+4)=[(2)^2+4]=8
+\]</span></p>
+<p>Comprobemos la existencia de dicho límite. Para ello tomamos valores cada vez más cercanos a <span class="math inline">\(2\)</span> para <span class="math inline">\(x\)</span>, acercándonos desde la izquierda y tabulando:</p>
+<p><img src="images/limites-001.png" /></p>
+<p>y tabulamos desde la derecha:</p>
+<p><img src="images/limites-002.png" /></p>
+<p>Como podemos apreciar, aunque en realidad no se llega a tocar exactamente el valor límite (<span class="math inline">\(8\)</span>), nos acercamos bastante al mismo, por ambos lados. Por lo tanto, podemos asegurar que el límite sí existe para esta función y es igual a <span class="math inline">\(8\)</span>.</p>
+</div>
+<div id="límite-de-funciones-discontinuas" class="section level3">
+<h3>Límite de funciones discontinuas</h3>
+<p>En este caso debemos recordar el hecho de que las funciones discontinuas lo son en momentos específicos y no necesariamente todo el tiempo. Por ejemplo, las funciones que implican divisiones pueden volverse indefinidas solo cuando la variable haga que el denominador se vuelva nulo. Por esta razón, la recomendación implica más bien sustituir siempre el valor al que tienda la variable. Si esta sustitución deja la función indefinida, consideremos otro método: la tabulación, ya abordada con anterioridad.</p>
+<p>Tomemos como ejemplo la obtención del siguiente límite:</p>
+<p><span class="math display">\[
+\lim_{x \to 3} \frac{5}{x+6}
+\]</span> En este caso, sabemos que la función es discontinua en algún momento. Pero <em>no</em> lo es para el valor al que tiende nuestra variable <span class="math inline">\(x\)</span>. Por lo tanto podemos sustituir tranquilamente:</p>
+<p><span class="math display">\[
+\lim_{x \to 3} \frac{5}{x+6}=\frac{5}{(3)+6}=\frac{5}{9}
+\]</span></p>
+<p>El asunto cambia cuando la función se vuelve discontinua exactamente con el valor al que tienda <span class="math inline">\(x\)</span>. Por ejemplo, el siguiente caso:</p>
+<p><span class="math display">\[
+\lim_{x \to 5} \frac{2x}{5-x}
+\]</span></p>
+<p>Aquí notamos que al sustituir el <span class="math inline">\(5\)</span> se da la discontinuidad para la función:</p>
+<p><span class="math display">\[
+\lim_{x \to 5} \frac{2x}{5-x}=\frac{2(5)}{5-(5)}=\frac{10}{0}=indefinido
+\]</span></p>
+<p>Un límite no puede ser <em>indefinido</em>. Debemos especificar el valor al que tiende la variable, obligatoriamente. Para ello, hacemos uso de la tabulación con valores cada más cercanos a <span class="math inline">\(5\)</span> y posteriormente comprobamos el límite como tal. Lo anterior implica obtener el límite tanto por la izquierda:</p>
+<p><img src="images/limites-003.png" /></p>
+<p>como por la derecha:</p>
+<p><img src="images/limites-004.png" /></p>
+<p>Vemos que sin importar por cual lado nos acerquemos, no obtenemos el mismo resultado. Sin embargo, el comportamiento es el mismo para la función, su valor se dispara hacia el infinito (por ambos lados y hacia ambos lados) conforme nos acercamos cada vez más al <span class="math inline">\(5\)</span>. Por lo tanto, concluimos que:</p>
+<p><span class="math display">\[
+\lim_{x \to 5} \frac{2x}{5-x}=\infty
+\]</span></p>
+<p>Podemos resolver algunos límites utilizando algún artificio matemático, como el desarrollo algebraico de las expresiones, su simplificación o factorización. Veamos un ejemplo. Calculemos el siguiente límite:</p>
+<p><span class="math display">\[
+\lim_{x \to -4} \frac{x+4}{x^2-16}
+\]</span></p>
+<p>Si simplemente sustituímos notaremos que el límite es indefinido:</p>
+<p><span class="math display">\[
+\lim_{x \to -4} \frac{x+4}{x^2-16}=\frac{(-4)+4}{(-4)^2-16}=\frac{0}{16-16}=\frac{0}{0}=indefinido
+\]</span> Antes de pensar en tabular, notemos que existe una especie de relación entre el denominador y el numerador, además de que el primero es factorizable. Recordemos por álgebra que:</p>
+<p><span class="math display">\[
+x^2-16=(x-4)(x+4)
+\]</span></p>
+<p>Esto es una diferencia de cuadrados. Y nos permite simplificar la expresión con el numerador:</p>
+<p><span class="math display">\[
+\frac{x+4} {x^2-16} = \frac{x+4} {(x-4)(x+4)} = \frac{1} {x-4}
+\]</span></p>
+<p>Así, ya podemos sustituir el valor:</p>
+<p><span class="math display">\[
+\lim_{x \to -4} \frac{1} {x-4}= \frac{1}{(-4)-4} = \frac{1}{-8}=-\frac{1}{8}
+\]</span></p>
+</div>
+</div>
 
 
 

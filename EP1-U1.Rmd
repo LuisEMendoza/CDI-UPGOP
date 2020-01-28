@@ -1,0 +1,17 @@
+---
+title: "Problemario 1"
+---
+
+## Funciones
+
+I. Obtenga el valor de la función para los siguientes casos: $f(0)$, $f(-3)$ y $f(5)$. Indique si la función es discontinua para dichos casos.
+
+1. $f(x)=x^2+3x-1$
+
+2. $f(x)=4x-2+\frac{2}{x}$
+
+3. $f(x)=\sqrt{2x-2}$
+
+4. $\frac{10}{x+3}$
+
+5. $\ln{10-3x}$

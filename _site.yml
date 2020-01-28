@@ -18,6 +18,7 @@ navbar:
     menu:
       - text: "UNIDADES"
       - text: "Unidad 1"
+      - text: "EP1"
         href: EP1-U1.html
       - text: "Unidad 2"
       - text: "Unidad 3"

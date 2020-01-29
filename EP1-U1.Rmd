@@ -40,6 +40,8 @@ II. Determine el dominio de las siguientes funciones:
 
 10. $f(x)=\frac{20}{x+10}$
 
+## Límites
+
 III. Calcule los siguientes límites:
 
 16. $\lim_{x \to 2} \frac{5}{4-2x}$
@@ -50,4 +52,4 @@ III. Calcule los siguientes límites:
 
 19. $\lim_{x \to 1} \frac{x^2+3x-24}{x-3}$
 
-20. $\lim_{x \to 5} \left[ \frac{x+3}{x+6} (x^2-12) \right]$
+20. $\lim_{x \to 5} \left[ \left(\frac{x+3}{x+6} \right) (x^2-12) \right]$

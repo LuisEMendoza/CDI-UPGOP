@@ -6,10 +6,24 @@ Lea cuidadosamente los siguientes casos y déles solución.
 
 1. Se ha dado a una estación de radio local el derecho exclusivo de promover un concierto en la ciudad, la cual tiene capacidad para 30,000 personas. La comisión para la estación de radio es $\$5,000$ más $\$25$ por cada boleto vendido para el concierto.
 
-> a. Determine la función $C=f(n)$, donde $C$ equivale a la comisión pagada a la estación de radio, expresada en pesos, y $n$ es igual al número de boletos vendidos.
+a. Determine la función $C=f(n)$, donde $C$ equivale a la comisión pagada a la estación de radio, expresada en pesos, y $n$ es igual al número de boletos vendidos.
 
-> b. Determine el dominio restringido y el rango para esta función.
+b. Determine el dominio restringido y el rango para esta función.
 
-2. 
+2.  Un vendedor recibe un salario base mensual de $\$2,500$ más una comisión de $\$40$ por cada unidad vendida. Si las ventas mensuales exceden 500 unidades, el vendedor recibe un bono de $\$1,500$ más $\$25$ adicionales por todas las unidades vendidas por encima de las 500 unidades.
+
+a. Formule la función de la compensación mensual.
+
+b. ¿Cuál sería el dominio de la función?
+
+b. ¿Cuáles serían las ganancias si vende 300, 450 y 600 unidades?
+
+3. Está organizando un viaje con sus compañeros y ha encontrado un paquete prometedor. El paquete incluye el boleto de avión, transferencias, hospedaje, desayuno y comida todos los días. El boleto es de $\$4,500$ por persona a menos que el número de personas que contrata exceda 150. En este caso, el precio del paquete para todas las personas disminuye $\$25$ por cada persona por encima de las 150. Si $p$ equivale al precio del paquete en dólares y $n$ es igual al número de personas que contratan el viaje, determine la función $p=f(n)$.
+
+¿Cuál sería el costo para un viaje con 100 personas? ¿Y para 300?
+
+
+
+
 
 

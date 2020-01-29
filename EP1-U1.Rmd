@@ -42,4 +42,12 @@ II. Determine el dominio de las siguientes funciones:
 
 III. Calcule los siguientes límites:
 
-16. $\lim_{x \to } 
+16. $\lim_{x \to 2} \frac{5}{4-2x}$
+
+17. $\lim_{x \to 3} \frac{x^2+3x-18}{x-3}$
+
+18. $\lim_{x \to 4}(4x^2-5x+1)$
+
+19. $\lim_{x \to 1} \frac{x^2+3x-24}{x-3}$
+
+20. $\lim_{x \to 5} \left[ \frac{x+3}{x+6} (x^2-12) \right]$

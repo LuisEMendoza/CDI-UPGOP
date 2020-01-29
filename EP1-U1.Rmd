@@ -44,22 +44,22 @@ II. Determine el dominio de las siguientes funciones:
 
 III. Calcule los siguientes límites:
 
-16. $\lim_{x \to 2} \frac{5}{4-2x}$
+16. $\lim_{x \to 2} \left (\frac{5}{4-2x} \right )$
 
-17. $\lim_{x \to 3} \frac{x^2+3x-18}{x-3}$
+17. $\lim_{x \to 3} \left (\frac{x^2+3x-18}{x-3} \right)$
 
-18. $\lim_{x \to 4}(4x^2-5x+1)$
+18. $\lim_{x \to 4} \left( 4x^2-5x+1 \right)$
 
-19. $\lim_{x \to 1} \frac{x^2+3x-24}{x-3}$
+19. $\lim_{x \to 1} \left( \frac{x^2+3x-24}{x-3} \right)$
 
 20. $\lim_{x \to 5} \left[ \left(\frac{x+3}{x+6} \right) (x^2-12) \right]$
 
-21. $\lim_{x \to -2} (-x^6+8x^4)$
+21. $\lim_{x \to -2} \left( -x^6+8x^4 \right)$
 
-22. $\lim_{x \to 2} \sqrt{5x^3+10x^2}$
+22. $\lim_{x \to 2} \left( \sqrt{5x^3+10x^2} \right)$
 
-23. $\lim_{x \to -9} \frac{81-x^2}{9+x}$
+23. $\lim_{x \to -9} \left( \frac{81-x^2}{9+x} \right)$
 
-24. $\lim_{x \to \infty} \frac{100-3x^3}{-x^3}$
+24. $\lim_{x \to \infty} \left( \frac{100-3x^3}{-x^3} \right)$
 
-25. $\lim_{x \to \infty} \frac{500+200x-21x^2+100x^4}{50x^3-20x^4-500}$
+25. $\lim_{x \to \infty} \left( \frac{500+200x-21x^2+100x^4}{50x^3-20x^4-500} \right)$

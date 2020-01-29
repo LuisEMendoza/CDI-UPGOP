@@ -53,3 +53,13 @@ III. Calcule los siguientes límites:
 19. $\lim_{x \to 1} \frac{x^2+3x-24}{x-3}$
 
 20. $\lim_{x \to 5} \left[ \left(\frac{x+3}{x+6} \right) (x^2-12) \right]$
+
+21. $\lim_{x \to -2} (-x^6+8x^4)$
+
+22. $\lim_{x \to 2} \sqrt{5x^3+10x^2}$
+
+23. $\lim_{x \to -9} \frac{81-x^2}{9+x}$
+
+24. $\lim_{x \to \infty} \frac{100-3x^3}{-x^3}$
+
+25. $\lim_{x \to \infty} \frac{500+200x-21x^2+100x^4}{50x^3-20x^4-500}$

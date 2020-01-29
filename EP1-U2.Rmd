@@ -1,0 +1,15 @@
+---
+title: "Evidencia de Producto 2. Unidad 1"
+---
+
+Lea cuidadosamente los siguientes casos y déles solución.
+
+1. Se ha dado a una estación de radio local el derecho exclusivo de promover un concierto en la ciudad, la cual tiene capacidad para 30,000 personas. La comisión para la estación de radio es $\$5,000$ más $\$25$ por cada boleto vendido para el concierto.
+
+a. Determine la función $C=f(n)$, donde $C$ equivale a la comisión pagada a la estación de radio, expresada en pesos, y $n$ es igual al número de boletos vendidos.
+
+b. Determine el dominio restringido y el rango para esta función.
+
+2. 
+
+

@@ -39,3 +39,7 @@ II. Determine el dominio de las siguientes funciones:
 9. $f(x)=\ln(10-x^3)$
 
 10. $f(x)=\frac{20}{x+10}$
+
+III. Calcule los siguientes límites:
+
+16. $\lim_{x \to } 

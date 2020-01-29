@@ -20,6 +20,8 @@ navbar:
       - text: "Unidad 1"
       - text: "EP1"
         href: EP1-U1.html
+      - text: "EP2"
+        href: EP1-U2.html
       - text: "Unidad 2"
       - text: "Unidad 3"
       - text: "Unidad 4"

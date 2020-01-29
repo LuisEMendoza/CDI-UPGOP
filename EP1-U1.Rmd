@@ -16,13 +16,21 @@ I. Obtenga el valor de la función para los siguientes casos: $f(0)$, $f(-3)$ y 
 
 4. $f(x)=\frac{10}{x+3}$
 
+4. $f(x)=\frac{4}{x^9-256x}$
+
 5. $f(x)=\ln{(10-3x)}$
+
+5. $f(x)=\sqrt{x^3-8}$
+
+7. $f(x)=\sqrt{\frac{x}{8-x}}$
+
+10. $f(r)=r^3-5r^2+3$
 
 ## Dominio de una función
 
 II. Determine el dominio de las siguientes funciones:
 
-6. $f(x)=3x^4$
+11. $f(x)=3x^4$
 
 7. $f(x)=\frac{10}{x-5}$
 

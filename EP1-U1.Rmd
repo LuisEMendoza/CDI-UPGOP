@@ -12,6 +12,20 @@ I. Obtenga el valor de la función para los siguientes casos: $f(0)$, $f(-3)$ y 
 
 3. $f(x)=\sqrt{2x-2}$
 
-4. $\frac{10}{x+3}$
+4. $f(x)=\frac{10}{x+3}$
 
-5. $\ln{10-3x}$
+5. $f(x)=\ln{(10-3x)}$
+
+## Dominio de una función
+
+II. Determine el dominio de las siguientes funciones:
+
+6. $f(x)=3x^4$
+
+7. $f(x)=\frac{10}{x-5}$
+
+8. $f(x)=\sqrt[4]{3x^2-28}$
+
+9. $f(x)=\ln(10-x^3)$
+
+10. $f(x)=\frac{20}{x+10}$

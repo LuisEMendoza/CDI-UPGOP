@@ -20,8 +20,8 @@ entonces $f'(x)=0$
 
 #### Ejemplos
 
-- $f(x)=5$
+$f(x)=5$
 
--- R: $f'(x)=0$
+- R: $f'(x)=0$
 
 

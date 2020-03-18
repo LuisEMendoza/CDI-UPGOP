@@ -11,10 +11,17 @@ En esta unidad abordaremos el Cálculo Diferencial desde un enfoque minimalista,
 
 La derivada de una función la podemos definir de manera burda como la razón de cambio que puede tener una función. Este simple enunciado nos permite entender la primera y más básica regla del Cálculo Diferencial. La razón de cambio de una función constante es cero. Es decir, dicha función no va a cambiar en ningún momento. 
 
+Ahora bien, usaremos una nomenclatura sencilla para saber distinguir muy bien cuándo hablamos de una función y cuándo de la derivada de dicha función. A partir de ahora, la derivada de una función será expresada con la misma letra de ésta, pero con un acento agregado. Por ejemplo, si nuestra función es $f$, su derivada la escribiremos como $f'$.
+
 ### Regla 1: Derivada de una constante
 
 > Si $f(x)=k$, siendo $k$ una constante;
 entonces $f'(x)=0$
 
+#### Ejemplos
+
+- $f(x)=5$
+
+-- R: $f'(x)=0$
 
 

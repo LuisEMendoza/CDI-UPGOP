@@ -20,7 +20,7 @@ entonces $f'(x)=0$
 
 #### Ejemplos
 
-$f(x)=5$
+1. $f(x)=5$
 
 - R: $f'(x)=0$
 

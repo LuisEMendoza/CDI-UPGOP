@@ -1,0 +1,20 @@
+---
+title: "Diferenciación"
+output: html_document
+---
+
+## Introducción
+
+En esta unidad abordaremos el Cálculo Diferencial desde un enfoque minimalista, que no superficial. La intención es abordar los fundamentos del tema primero, para sentar las bases que permitan entrar al Cálculo Integral. Recordemos que las aplicaciones como tales, serán estudiadas en la última unidad del curso. Sin más preámbulo, pasemos a las reglas de derivación.
+
+## Reglas de la derivada
+
+La derivada de una función la podemos definir de manera burda como la razón de cambio que puede tener una función. Este simple enunciado nos permite entender la primera y más básica regla del Cálculo Diferencial. La razón de cambio de una función constante es cero. Es decir, dicha función no va a cambiar en ningún momento. 
+
+### Regla 1: Derivada de una constante
+
+> Si $f(x)=k$, siendo $k$ una constante;
+entonces $f'(x)=0$
+
+
+

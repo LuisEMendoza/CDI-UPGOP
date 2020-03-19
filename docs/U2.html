@@ -345,6 +345,7 @@ $(document).ready(function () {
 <p>Ahora bien, usaremos una nomenclatura sencilla para saber distinguir muy bien cuándo hablamos de una función y cuándo de la derivada de dicha función. A partir de ahora, la derivada de una función será expresada con la misma letra de ésta, pero con un acento agregado. Por ejemplo, si nuestra función es <span class="math inline">\(f\)</span>, su derivada la escribiremos como <span class="math inline">\(f&#39;\)</span>.</p>
 <div id="regla-1-derivada-de-una-constante" class="section level3">
 <h3>Regla 1: Derivada de una constante</h3>
+<p>La derivada de una constante, o sea, un número, siempre será igual a cero.</p>
 <blockquote>
 <p>Si <span class="math inline">\(f(x)=k\)</span>, siendo <span class="math inline">\(k\)</span> una constante; entonces <span class="math inline">\(f&#39;(x)=0\)</span></p>
 </blockquote>
@@ -355,6 +356,56 @@ $(document).ready(function () {
 </ol>
 <ul>
 <li>R: <span class="math inline">\(f&#39;(x)=0\)</span></li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li><span class="math inline">\(f(x)=-21\)</span></li>
+</ol>
+<ul>
+<li>R: <span class="math inline">\(f&#39;(x)=0\)</span></li>
+</ul>
+</div>
+</div>
+<div id="regla-2-derivada-de-una-variable-lineal" class="section level3">
+<h3>Regla 2: Derivada de una variable lineal</h3>
+<p>Antes de comenzar a hablar de esta regla, es necesario recordar un poco sobre álgebra. Es importante que distingamos entre base, exponente y coeficiente. La siguiente imagen muestra quién es quien:</p>
+<p><img src="images/exponente.png" /></p>
+<p>Ya que sabemos quién es el exponente y el coeficiente, podemos continuar. La derivada de una variable, cuya potencia (o exponente) es igual a uno, siempre será igual al coeficiente que acompaña a dicha variable.</p>
+<blockquote>
+<p>Si <span class="math inline">\(f(x)=kx\)</span>, siendo <span class="math inline">\(k\)</span> una constante; entonces <span class="math inline">\(f&#39;(x)=k\)</span></p>
+</blockquote>
+<div id="ejemplos-1" class="section level4">
+<h4>Ejemplos</h4>
+<ol start="3" style="list-style-type: decimal">
+<li><span class="math inline">\(f(x)=5x\)</span></li>
+</ol>
+<ul>
+<li>R: <span class="math inline">\(f&#39;(x)=5\)</span></li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li><span class="math inline">\(f(x)=-34x\)</span></li>
+</ol>
+<ul>
+<li>R: <span class="math inline">\(f&#39;(x)=-34\)</span></li>
+</ul>
+</div>
+</div>
+<div id="regla-3.-derivada-de-una-variable-no-lineal" class="section level3">
+<h3>Regla 3. Derivada de una variable no lineal</h3>
+<p>La derivada de una variable, cuya potencia (o exponente) no es uno, será igual al coeficiente que acompaña a dicha variable multiplicado por el exponente. A este último le restaremos un uno entero, y así tendremos el nuevo exponente.</p>
+<p>Si <span class="math inline">\(f(x)=kx^n\)</span>, siendo <span class="math inline">\(k\)</span> una constante y <span class="math inline">\(n\neq 1\)</span>; entonces <span class="math inline">\(f&#39;(x)=nkx^{n-1}\)</span>.</p>
+<div id="ejemplos-2" class="section level4">
+<h4>Ejemplos</h4>
+<ol start="5" style="list-style-type: decimal">
+<li><span class="math inline">\(f(x)=2x^4\)</span></li>
+</ol>
+<ul>
+<li>R: <span class="math inline">\(f&#39;(x)=(4)2x^{4-1}=8x^3\)</span></li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li><span class="math inline">\(f(x)=-3x^6\)</span></li>
+</ol>
+<ul>
+<li>R: <span class="math inline">\(f&#39;(x)=(6)(-3)x^{6-1}=-18x^5\)</span></li>
 </ul>
 </div>
 </div>

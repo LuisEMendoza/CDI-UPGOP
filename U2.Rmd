@@ -15,6 +15,8 @@ Ahora bien, usaremos una nomenclatura sencilla para saber distinguir muy bien cu
 
 ### Regla 1: Derivada de una constante
 
+La derivada de una constante, o sea, un número, siempre será igual a cero.
+
 > Si $f(x)=k$, siendo $k$ una constante;
 entonces $f'(x)=0$
 
@@ -23,5 +25,47 @@ entonces $f'(x)=0$
 1. $f(x)=5$
 
 - R: $f'(x)=0$
+
+2. $f(x)=-21$
+
+- R: $f'(x)=0$
+
+### Regla 2: Derivada de una variable lineal
+
+Antes de comenzar a hablar de esta regla, es necesario recordar un poco sobre álgebra. Es importante que distingamos entre base, exponente y coeficiente. La siguiente imagen muestra quién es quien: 
+
+![](images/exponente.png)
+
+Ya que sabemos quién es el exponente y el coeficiente, podemos continuar. La derivada de una variable, cuya potencia (o exponente) es igual a uno, siempre será igual al coeficiente que acompaña a dicha variable. 
+
+> Si $f(x)=kx$, siendo $k$ una constante; entonces $f'(x)=k$
+
+#### Ejemplos
+
+3. $f(x)=5x$
+
+- R: $f'(x)=5$
+
+4. $f(x)=-34x$
+
+- R: $f'(x)=-34$
+
+### Regla 3. Derivada de una variable no lineal
+
+La derivada de una variable, cuya potencia (o exponente) no es uno, será igual al coeficiente que acompaña a dicha variable multiplicado por el exponente. A este último le restaremos un uno entero, y así tendremos el nuevo exponente.
+
+Si $f(x)=kx^n$, siendo $k$ una constante y $n\neq 1$; entonces $f'(x)=nkx^{n-1}$. 
+
+#### Ejemplos
+
+5. $f(x)=2x^4$
+
+- R: $f'(x)=(4)2x^{4-1}=8x^3$
+
+6. $f(x)=-3x^6$
+
+- R: $f'(x)=(6)(-3)x^{6-1}=-18x^5$
+
+
 
 

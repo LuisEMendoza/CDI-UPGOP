@@ -1,0 +1,50 @@
+---
+title: "Integración"
+output: html_document
+---
+
+## Introducción
+
+El Cálculo Integral tiene un número considerable de aplicaciones en el ramo económico-administrativo. Dichas aplicaciones se abordan más adelante. Por lo pronto, lo introduciremos en cuanto a su fundamento y de acuerdo a los contenidos de la especialidad, sin entrar en tópicos cuya complejidad se considera innecesaria. Mencionesmo, eso sí, que la integración de una función es la operación contraria a la derivación  de la misma. Lo anterior permite llamar con todo derecho a la Integral como la __Antiderivada__. También es necesario explicar la nomenclatura de la integración:
+
+$$
+\int f'(x)\ dx
+$$
+
+  Donde: 
+  
+  $\int=$ símbolo de la integral, viene de una _S_ alargada, ya que antes se consideraba a la integral como una «sumatoria».
+  
+  $f'(x)=$ función ya derivada a integrar.
+  
+  $dx=$ diferencial, es obligatorio colocarlo en cada integral, indica la variable sobre la que se «trabaja».
+
+
+Comencemos con las reglas básicas de integración.
+
+## Reglas de integración
+
+Las reglas son relativamente sencillas de seguir. Sin embargo, existe un concepto que puede resultar un poco confuso: el __diferencial__. De momento no es necesario profundizar en el mismo, pero sí es pertinente mencionar que cuando una función es derivada, se acostumbra agregarle la expresión $dx$, la cual indica que dicha expresión es ya una derivada. De las anteriores reglas de derivación puede inferirse la importancia del _diferencial_, sin embargo, una definición más formal se dará conforme sea necesario. Comencemos con las reglas de integración.
+
+### Regla 1: Integral de una constante
+
+Al contrario que en la derivada, la cual vuelve nula una constante, la integral le agrega la variable indicada en el diferencial. La regla enunciada queda como sigue:
+
+Si $\int{f'(x)\ dx}$ y $f'(x)=k\ dx$, entonces $f(x)=kx+C$
+
+#### Ejemplo
+
+$$
+\int{10\ dx}=10x+C
+$$
+
+Una pregunta muy válida y que debería saltar casi de inmediato sería ¿qué es esa $C$ que aparece en el resultado? Pues bien, esa $C$ es llamada __constante de integración__. No queda muy claro, así que para darle una respuesta mejor, recordemos la derivada de una función. Tomemos la función $f(x)=10x$. Al derivarla, sabremos que $f'(x)=10\ dx$. Siguiendo la regla 1 de integración:
+
+$$
+\int{10\ dx}=10x 
+$$
+
+Pero ¿qué pasaría si la función fuera $f(x)=10x+8$? Pues al derivarla se convierte precisamente en $f'(x)=10\ dx$. El 8 desapareció. Al integrar la función no hay manera de recuperarla: $\int{10\ dx}=10x$, justo como en la anterior. Pero sí es posible dejar indicado que junto al $10x$ había una constante. Esta es precisamente $C$.
+
+
+

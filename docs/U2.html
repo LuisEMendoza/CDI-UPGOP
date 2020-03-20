@@ -392,7 +392,9 @@ $(document).ready(function () {
 <div id="regla-3.-derivada-de-una-variable-no-lineal" class="section level3">
 <h3>Regla 3. Derivada de una variable no lineal</h3>
 <p>La derivada de una variable, cuya potencia (o exponente) no es uno, será igual al coeficiente que acompaña a dicha variable multiplicado por el exponente. A este último le restaremos un uno entero, y así tendremos el nuevo exponente.</p>
+<blockquote>
 <p>Si <span class="math inline">\(f(x)=kx^n\)</span>, siendo <span class="math inline">\(k\)</span> una constante y <span class="math inline">\(n\neq 1\)</span>; entonces <span class="math inline">\(f&#39;(x)=nkx^{n-1}\)</span>.</p>
+</blockquote>
 <div id="ejemplos-2" class="section level4">
 <h4>Ejemplos</h4>
 <ol start="5" style="list-style-type: decimal">
@@ -407,6 +409,172 @@ $(document).ready(function () {
 <ul>
 <li>R: <span class="math inline">\(f&#39;(x)=(6)(-3)x^{6-1}=-18x^5\)</span></li>
 </ul>
+</div>
+<div id="un-caso-especial.-regla-3a-derivada-de-un-denominador-monomio" class="section level4">
+<h4>Un caso especial. Regla 3a: derivada de un denominador monomio</h4>
+<p>No es exactamente un caso especial, pero es bastante frecuente. En ocasiones nos vamos a encontrar con expresiones del tipo fracción, en la cual el denominador consiste de un solo término, teniendo la forma <span class="math inline">\(\frac{a}{kx^n}\)</span>. Si este es el caso, se resuelve siguiendo la misma lógica que la anterior, salvo dos diferencias:</p>
+<blockquote>
+<p>Si <span class="math inline">\(f(x)=\frac{a}{kx^n}\)</span>, siendo <span class="math inline">\(a\)</span> y <span class="math inline">\(k\)</span> constantes no necesariamente iguales; entonces <span class="math inline">\(f&#39;(x)=\frac{(-n)a}{kx^{n+1}}\)</span>.</p>
+</blockquote>
+</div>
+<div id="ejemplos-3" class="section level4">
+<h4>Ejemplos</h4>
+<ol start="7" style="list-style-type: decimal">
+<li></li>
+</ol>
+<p><span class="math display">\[f(x)=\frac{8}{3x}\]</span></p>
+<ul>
+<li>R:</li>
+</ul>
+<p><span class="math display">\[f&#39;(x)=\frac{(-1)8}{3x^{1+1}}=\frac{-8}{3x^2}=-\frac{8}{3x^2}\]</span></p>
+<p>En este ejemplo podemos notar que el denominador <span class="math inline">\(3x\)</span> tiene una potencia de uno, pero no podemos aplicar directamente la regla 2. Por lo tanto, consideramos el exponente (<span class="math inline">\(n=1\)</span>) y aplicamos la regla 3a.</p>
+<ol start="8" style="list-style-type: decimal">
+<li></li>
+</ol>
+<p><span class="math display">\[f(x)=\frac{-5}{4x^3}\]</span></p>
+<ul>
+<li>R: En este caso <span class="math inline">\(n=3\)</span>, por lo tanto <span class="math inline">\(-n=-3\)</span></li>
+</ul>
+<p><span class="math display">\[f&#39;(x)=\frac{(-3)(-5)}{4x^{3+1}}=\frac{15}{4x^4}\]</span></p>
+</div>
+</div>
+<div id="regla-4-derivada-de-varios-términos" class="section level3">
+<h3>Regla 4: Derivada de varios términos</h3>
+<p>Muchas funciones no son de un solo término, por el contrario, consisten de la suma o diferencia de varios de ellos. Su derivada se obtiene derivando cada uno de los términos por separado, mediante las reglas básicas ya vistas.</p>
+<blockquote>
+<p>Si <span class="math inline">\(f(x)=u+v\)</span>, siendo <span class="math inline">\(u\)</span> y <span class="math inline">\(v\)</span> dos funciones también; entonces <span class="math inline">\(f&#39;(x)=u&#39;+v&#39;\)</span>.</p>
+</blockquote>
+<div id="ejemplos-4" class="section level4">
+<h4>Ejemplos</h4>
+<ol start="9" style="list-style-type: decimal">
+<li><span class="math inline">\(f(x)=3x^2+2x\)</span></li>
+</ol>
+<ul>
+<li>R: <span class="math inline">\(f&#39;(x)=(2)3x^{2-1}+2=6x+2\)</span></li>
+</ul>
+<p>En este ejemplo utilizamos la regla 3 y la regla 2, respectivamente.</p>
+<ol start="10" style="list-style-type: decimal">
+<li><span class="math inline">\(f(x)=5x^7+4x-3x^{-2}+\frac{2}{3x^4}\)</span></li>
+</ol>
+<p>Deberíamos poder distinguir que se deben utilizar la regla 3, la regla 2, de nuevo la 3 y la extensión 3a, en orden de aparición. Por lo tanto, la solución es:</p>
+<ul>
+<li>R:</li>
+</ul>
+<p><span class="math display">\[
+f&#39;(x)=(7)5x^{4-1}+4-(-2)3x^{-2-1}+\frac{(-4)2}{3x^{4+1}}\\
+f&#39;(x)=35x^3+4+6x^{-1}-\frac{8}{3x^5}
+\]</span></p>
+</div>
+</div>
+<div id="regla-5-derivada-de-un-producto-introducción" class="section level3">
+<h3>Regla 5: Derivada de un producto (introducción)</h3>
+<p>En el caso de tener que derivar una expresión formada por el producto de dos términos irreductibles (es decir, que no se puedan simplificar), se utiliza la regla 5. Antes de entrar de lleno con esta regla, veamos unos ejemplos que sí pueden reducirse, para distinguir cuándo sí usar la regla 5 y cuándo no.</p>
+<ol start="11" style="list-style-type: decimal">
+<li><span class="math inline">\(f(x)=(5x)(2x^8)\)</span></li>
+</ol>
+<p>La multiplicación de estos dos términos sí puede realizarse con mera álgebra, así que reduzcamos primero:</p>
+<ul>
+<li>R: <span class="math inline">\(f(x)=(5)(2)x^{1+8}=10x^9\)</span></li>
+</ul>
+<p>y derivemos enseguida:</p>
+<p><span class="math inline">\(f&#39;(x)=(9)10x^{9-1}=90x^8\)</span></p>
+<ol start="12" style="list-style-type: decimal">
+<li><span class="math inline">\(f(x)=(2x+1)(3x^2-4)\)</span></li>
+</ol>
+<p>Desarrollemos el producto de este par de binomios, recordando que se multiplica cada término del primer binomio por los dos del otro:</p>
+<ul>
+<li><p>R: <span class="math display">\[
+f(x)=(2)(3)x^{1+2}+(2)(-4)x+(1)(3)x^2+(1)(-4)\\
+f(x)=6x^3-8x+3x^2-4\\
+f(x)=6x^3+3x^2-8x-4
+\]</span></p>
+<p>Ahora ya podemos calcular la derivada mediante la regla 4:</p>
+<p><span class="math display">\[
+f&#39;(x)=(3)6x^{3-1}+(2)3x^{2-1}-8\\
+f&#39;(x)=18x^2+6x-8
+\]</span></p></li>
+</ul>
+<p>Sí existe una amplia variedad de productos irreductibles que involucran ciertas funciones, tales como el <em>número de Euler</em> en productos como por ejemplo <span class="math inline">\((x)(e^{3x})\)</span>, pero tenemos el inconveniente de que aún no abordamos las reglas que nos permiten derivar dicha función. Por lo tanto, dejemos de lado la Regla 5 para después, cuando ya dispongamos de mejores herramientas para su desarrollo óptimo.</p>
+</div>
+<div id="regla-6-derivada-de-un-cociente" class="section level3">
+<h3>Regla 6: Derivada de un cociente</h3>
+<p>Ahora trabajaremos con funciones que tienen la forma de fracción, es decir, son cocientes. Para ello, debemos asegurarnos que sean cocientes irreductibles. Esto es más sencillo, fijemos que para no ser irreductibles deben tener solo un monomio como denominador (sí, pueden reducirse fracciones cuyo denominador no sea necesariamente un monomio, pero aquí queremos hacer las cosas más fáciles o al menos más rápidas). Veamos un caso:</p>
+<p><span class="math display">\[
+f(x)=\frac{2x^2+3x}{x}
+\]</span></p>
+<p>Esta función es una fracción que puede simplificarse mediante su denominador. Por lo tanto, no es candidata a ser derivada mediante regla 6. Así, es mejor separarla y enseguida derivarla. Veamos cómo:</p>
+<ol start="13" style="list-style-type: decimal">
+<li></li>
+</ol>
+<p><span class="math display">\[
+  f(x)=\frac{2x^2+3x}{x}=\frac{2x^2}{x}+\frac{3x}{x}
+  \]</span></p>
+<p>Al tener un monomio como denominador, simplemente separamos la fracción en tantas como términos tenga la suma (que forma al )o resta) del numerador. Mediante álgebra simplificamos las fracciones resultantes y ya podemos derivar con las reglas vistas anteriormente:</p>
+<p><span class="math display">\[
+  f(x)=\frac{2x^2}{x}+\frac{3x}{x}=2x^{2-1}+3x^{1-1}=2x+3
+  \]</span></p>
+<p>Este ejemplo nos debe recordar dos cosas: que en las divisiones, los exponentes se restan y que un exponente igual a 0 implica que la base se convierta automáticamente en 1.</p>
+<p>Así, ya podemos derivar nuestra función ya simplificada:</p>
+<p><span class="math display">\[
+  f&#39;(x)=2
+  \]</span></p>
+<p>Después de este breve repaso ya podemos introducir la regla 6, para lo cual sí tenemos las herramientas básicas. La regla 6 se puede escribir así:</p>
+<blockquote>
+<p>Si <span class="math inline">\(f(x)=\frac{u}{v}\)</span> y <span class="math inline">\(\frac{u}{v}\)</span> no puede simplificarse, entonces <span class="math display">\[f&#39;(x)=\frac{u&#39;v-uv&#39;}{v^2}\]</span></p>
+</blockquote>
+<div id="ejemplos-5" class="section level4">
+<h4>Ejemplos</h4>
+<ol start="14" style="list-style-type: decimal">
+<li></li>
+</ol>
+<p><span class="math display">\[
+  f(x)=\frac{2x^3-4x^2}{x+3}
+  \]</span></p>
+<p>Vemos que esta fracción no puede reducirse como lo hicimos en el ejemplo anterior, por lo tanto aplicaremos la regla 6:</p>
+<ul>
+<li><p>R: Primero definiremos <span class="math inline">\(u\)</span>, <span class="math inline">\(v\)</span>, <span class="math inline">\(u&#39;\)</span> y <span class="math inline">\(v&#39;\)</span>:</p>
+<p><span class="math display">\[
+u=2x^3-4x^2\\
+v=x+3\\
+u&#39;=(3)2x^{3-1}-(2)4x^{2-1}=6x^2-8x\\
+v&#39;=1\\
+v^2=(x+3)^2=(x)^2+2(x)(3)+(3)^2=x^2+6x+9
+\]</span></p>
+<p>Ahora sustituimos estos valores en la fórmula de la regla 6:</p>
+<p><span class="math display">\[
+f&#39;(x)=\frac{u&#39;v-uv&#39;}{v^2}=\frac{(6x^2-8x)(x+3)-(2x^3-4x^2)(1)}{x^2+6x+9}
+\]</span></p>
+<p>Desarrollamos el cociente:</p>
+<p><span class="math display">\[
+f&#39;(x)=\frac{6x^{2+1}+(6)(3)x^2-8x^{1+1}-8(3)-[2x^3-4x^2]}{x^2+6x+9}\\
+f&#39;(x)=\frac{6x^3+18x^2-8x^2-16-2x^3+4x^2}{x^2+6x+9}\\
+\]</span></p>
+<p>Simplificamos términos semejantes del numerador:</p>
+<p><span class="math display">\[
+f&#39;(x)=\frac{6x^3-2x^3+18x^2-8x^2+4x^2-16}{x^2+6x+9}\\
+f&#39;(x)=\frac{4x^3+14x^2-16}{x^2+6x+9}
+\]</span></p></li>
+</ul>
+<p>Y ya hemos terminado. No es un procedimiento rápido, pero sí es relativamente fácil si comprendemos el mecanismo detrás.</p>
+</div>
+</div>
+<div id="regla-7-derivada-de-una-función-elevada-a-una-potencia" class="section level3">
+<h3>Regla 7: Derivada de una función elevada a una potencia</h3>
+<p>En ocasiones nos vamos a encontrar con funciones que se encuentran elevadas a una potencia, ya sea entera como las de siempre (<span class="math inline">\((4x^5-2x^2)^7\)</span>) o fraccionaria como las raíces (<span class="math inline">\(\sqrt{3x+5}\)</span>). Su regla de derivación es sencilla, pero se presta a ciertas confusiones. Veámosla:</p>
+<blockquote>
+<p>Si <span class="math inline">\(f(x)=u^n\)</span>, siendo <span class="math inline">\(u\)</span> una función multitérminos, entonces <span class="math inline">\(f&#39;(x)=(nu&#39;)u^{n-1}\)</span>.</p>
+</blockquote>
+<p>Notemos que se trata de obtener la derivada de la función, multiplicar esta por el exponente y luego por la función original pero elevada a la misma potencia menos 1. Quizá haya sonado como trabalenguas y sea mejor ver un ejemplo.</p>
+<div id="ejemplo" class="section level4">
+<h4>Ejemplo</h4>
+<ol start="15" style="list-style-type: decimal">
+<li><span class="math inline">\(f(x)=(2x^3-3x)^3\)</span></li>
+</ol>
+<p>Sabemos que el exponente <span class="math inline">\(n=3\)</span>, y que la derivada <span class="math inline">\(u&#39;=(3)2x^{3-1}-3=6x^2-3\)</span>. Por lo tanto, le damos la forma adecuada a nuestro ejercicio:</p>
+<p><span class="math display">\[
+  f&#39;(x)=(nu&#39;)u^n=[(3)(6x^2-3)](2x^3-3x)^{3-1}\\
+  f&#39;(x)=(18x^2-9)(2x^3-3x)^2
+  \]</span></p>
 </div>
 </div>
 </div>

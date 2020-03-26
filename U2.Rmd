@@ -290,6 +290,68 @@ El logaritmo natural y el número de Euler $e$ tienen una relación muy estrecha
   f'(x)=48xe^{4x^2}
   $$
 
+### Regla de la Cadena
+
+Esta regla se utiliza cuando tenemos dos funciones encadenadas, es decir, una es función de la otra. Por ejemplo, si $y=f(u)$ y $u=g(x)$ y ambas son derivables, entonces: 
+
+$$
+\frac{dy}{dx}=\frac{dy}{du} \cdot \frac{du}{dx}
+$$
+#### Ejemplos
+
+Supongamos el siguiente par de funciones compuestas, donde $y$ está en función de $u$ y esta se encuentra en función de $x$:
+
+$$
+y=f(u)=5u^2-20u \\
+u=g(x)=6x^3+8x^2
+$$
+
+Derivamos ambas funciones, primero $y$ con respecto a $u$:
+
+$$
+y'=(2)5u^{2-1}-20u^{1-1} \\
+y'=10u-20
+$$
+
+y ahora $u$ con respecto a $x$:
+
+$$
+u'=(3)6x^{3-1}+(2)8x^{2-1} \\
+u'=18x^2+16x
+$$
+
+
+Como paso final, multiplicamos ambas derivadas:
+
+$$
+(y')(u')=(10u-20)(18x^2+16x)
+$$
+
+En este momento es importante notar que la multiplicación tiene que realizarse con respecto a la misma variable. En este caso, la que no está «encadenada», o dicho de otro modo, la que no se repite. La $u$ es la variable encadenada, por lo tanto, debemos cambiarla por lo que vale dicha variable originalmente. 
+
+Sustituimos pues, todas las $u$ que encontremos por el valor original de la función $u$, es decir, $g(x)=6x^3+8x^2$:
+
+$$
+(y')(u')=(10u-20)(18x^2+16x) \\
+(y')(u')=(10(6x^3+8x^2)-20)(18x^2+16x)
+$$
+
+En la segunda línea ya cambiamos la $u$ por su valor original. Podemos desarrollar la multiplicación indicada en la sustitución:
+
+$$
+(y')(u')=((10)6x^3+(10)8x^2-20)(18x^2+16x)\\
+(y')(u')=(60x^3+80x^2-20)(18x^2+16x)\\
+$$
+
+Ahora sí, ya podemos desarrollar la expresión:
+
+$$
+(y')(u')=\\(60)18x^{3+2}+(60)16x^{3+1}+(80)18x^{2+2}+(80)16x^{2+1}-(20)18x^2-(20)16x\\
+1080x^5+960x^4+1440x^4+1280x^3-360x^2-320x
+$$
+
+
+
 
 
 

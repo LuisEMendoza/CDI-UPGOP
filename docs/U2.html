@@ -621,6 +621,48 @@ f&#39;(x)=48xe^{4x^2}
 </ul>
 </div>
 </div>
+<div id="regla-de-la-cadena" class="section level3">
+<h3>Regla de la Cadena</h3>
+<p>Esta regla se utiliza cuando tenemos dos funciones encadenadas, es decir, una es función de la otra. Por ejemplo, si <span class="math inline">\(y=f(u)\)</span> y <span class="math inline">\(u=g(x)\)</span> y ambas son derivables, entonces:</p>
+<p><span class="math display">\[
+\frac{dy}{dx}=\frac{dy}{du} \cdot \frac{du}{dx}
+\]</span> #### Ejemplos</p>
+<p>Supongamos el siguiente par de funciones compuestas, donde <span class="math inline">\(y\)</span> está en función de <span class="math inline">\(u\)</span> y esta se encuentra en función de <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+y=f(u)=5u^2-20u \\
+u=g(x)=6x^3+8x^2
+\]</span></p>
+<p>Derivamos ambas funciones, primero <span class="math inline">\(y\)</span> con respecto a <span class="math inline">\(u\)</span>:</p>
+<p><span class="math display">\[
+y&#39;=(2)5u^{2-1}-20u^{1-1} \\
+y&#39;=10u-20
+\]</span></p>
+<p>y ahora <span class="math inline">\(u\)</span> con respecto a <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+u&#39;=(3)6x^{3-1}+(2)8x^{2-1} \\
+u&#39;=18x^2+16x
+\]</span></p>
+<p>Como paso final, multiplicamos ambas derivadas:</p>
+<p><span class="math display">\[
+(y&#39;)(u&#39;)=(10u-20)(18x^2+16x)
+\]</span></p>
+<p>En este momento es importante notar que la multiplicación tiene que realizarse con respecto a la misma variable. En este caso, la que no está «encadenada», o dicho de otro modo, la que no se repite. La <span class="math inline">\(u\)</span> es la variable encadenada, por lo tanto, debemos cambiarla por lo que vale dicha variable originalmente.</p>
+<p>Sustituimos pues, todas las <span class="math inline">\(u\)</span> que encontremos por el valor original de la función <span class="math inline">\(u\)</span>, es decir, <span class="math inline">\(g(x)=6x^3+8x^2\)</span>:</p>
+<p><span class="math display">\[
+(y&#39;)(u&#39;)=(10u-20)(18x^2+16x) \\
+(y&#39;)(u&#39;)=(10(6x^3+8x^2)-20)(18x^2+16x)
+\]</span></p>
+<p>En la segunda línea ya cambiamos la <span class="math inline">\(u\)</span> por su valor original. Podemos desarrollar la multiplicación indicada en la sustitución:</p>
+<p><span class="math display">\[
+(y&#39;)(u&#39;)=((10)6x^3+(10)8x^2-20)(18x^2+16x)\\
+(y&#39;)(u&#39;)=(60x^3+80x^2-20)(18x^2+16x)\\
+\]</span></p>
+<p>Ahora sí, ya podemos desarrollar la expresión:</p>
+<p><span class="math display">\[
+(y&#39;)(u&#39;)=\\(60)18x^{3+2}+(60)16x^{3+1}+(80)18x^{2+2}+(80)16x^{2+1}-(20)18x^2-(20)16x\\
+1080x^5+960x^4+1440x^4+1280x^3-360x^2-320x
+\]</span></p>
+</div>
 </div>
 
 

@@ -297,6 +297,7 @@ Esta regla se utiliza cuando tenemos dos funciones encadenadas, es decir, una es
 $$
 \frac{dy}{dx}=\frac{dy}{du} \cdot \frac{du}{dx}
 $$
+
 #### Ejemplos
 
 Supongamos el siguiente par de funciones compuestas, donde $y$ está en función de $u$ y esta se encuentra en función de $x$:

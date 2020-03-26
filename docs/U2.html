@@ -664,6 +664,52 @@ u&#39;=18x^2+16x
 (y&#39;)(u&#39;)=\\(60)18x^{3+2}+(60)16x^{3+1}+(80)18x^{2+2}+(80)16x^{2+1}-(20)18x^2-(20)16x\\
 1080x^5+960x^4+1440x^4+1280x^3-360x^2-320x
 \]</span></p>
+<p>Simplificamos por términos semejantes:</p>
+<p><span class="math display">\[
+(y&#39;)(u&#39;)=1080x^5+2400x^4+1280x^3-360x^2-320x
+\]</span></p>
+<p>Y esta es la resṕuesta al ejercicio.</p>
+</div>
+</div>
+<div id="ejercicios" class="section level3">
+<h3>Ejercicios</h3>
+<p>Es importante saber realizar la siguiente serie de ejercicios, como mera práctica.</p>
+</div>
+<div id="uso-de-aplicaciones" class="section level3">
+<h3>Uso de aplicaciones</h3>
+<p>Me permito comentarles sobre la necesidad de saber utilizar aplicaciones que permiten resolver expresiones algebraicas y derivadas. Con el importante desarrollo de dispositivos de cómputo y móviles, es curioso que no les demos un uso también «académico» a los mismos. Enseguida les comparto los enlaces de descarga para el programa <em>Maxima</em>, el cual puede ser instalado en computadora y teléfono celular. También les muestro algunos comandos sencillos para poder corroborar sus respuestas a los ejercicios propuestos.</p>
+<div id="descargas" class="section level4">
+<h4>Descargas</h4>
+<p>Les comparto los enlaces de la aplicación Maxima:</p>
+<p><img src="images/maxima-logo.png" /></p>
+<p><a href="https://sourceforge.net/projects/maxima/files/Maxima-Windows/5.43.2-Windows/">Enlace para descargar Maxima para computadora Windows</a></p>
+<p>Hay dos versiones, la de 64 bits y la de 32. Si su computadora trae Windows 8 o 10, la adecuada es la de 64 bits. Si trae Windows XP o 7, es muy probable que requiera la versión de 32 bits.</p>
+<p><a href="https://play.google.com/store/apps/details?id=jp.yhonda&amp;feature=search_result#?t=W251bGwsMSwxLDEsImpwLnlob25kYSJd">Enlace para la app Maxima en Google Play</a></p>
+</div>
+<div id="ejemplos-7" class="section level4">
+<h4>Ejemplos</h4>
+<p>Resolver expresiones algebraicas y derivadas en Maxima es bastante sencillo. La interfaz es muy simple, y todo es con base en comandos escritos que no son complejos. Veamos cómo simplificar y resolver tres ejercicios de cierta dificultad.</p>
+<p>Comenzamos:</p>
+<ol style="list-style-type: decimal">
+<li>Derivar <span class="math inline">\(f(x)=7x^3-4x^2+8x-10\)</span>:</li>
+</ol>
+<p><strong>Computadora</strong> Ejecutamos la aplicación, cuya pantalla de bienvenida es una pequeña ventana de bienvenida que podemos cerrar. Enseguida se nos muestra la interfaz, que contiene un guión bajo que parpadea, justo donde señala el cursor en la siguiente imagen:</p>
+<p><img src="images/maxima-001.png" /></p>
+<p>Ahí comenzaremos a escribir nuestra función, tomando en cuenta de que escribiremos ‘:=’ en lugar de solamente poner un ‘=’; además debemos escribir un asterisco entre cada coeficiente y su respectiva variable (Maxima representa el asterisco con un punto en medio); las potencias se escriben con el acento circunflejo <strong>^</strong> (en el teclado español latinoamericano se consigue con la combinación de teclas ‘Alt Gr + {’ y enseguida se presiona la tecla de ‘Espacio’); y al final cerraremos con un ‘;’. Se muestra la manera correcta en la siguiente imagen:</p>
+<p><img src="images/maxima-002.png" /></p>
+<p>Presionamos la combinación de teclas ‘Control + Enter’. Debería aparecer algo así:</p>
+<p><img src="images/maxima-003.png" /></p>
+<p>Notemos que la expresión que capturamos es definida por ‘(%i1)’, lo cual significa <em>Entrada 1</em>. Mientras que lo que devuelve Maxima es denotado como ‘(%o1)’, lo que significa que es la <em>Salida 1</em>.</p>
+<p>Ahora derivaremos esta función con el comando ‘diff’:</p>
+<p>’’’ diff(f(x),x); ’’’</p>
+<p>Este comando requiere la función a derivar primero, la cual ya definimos arriba; y después de la coma la variable sobre la que va a derivar, que en este caso es la <span class="math inline">\(x\)</span>. Se muestra la pantalla en Maxima:</p>
+<p><img src="images/maxima-004.png" /></p>
+<p><strong>Móvil</strong> El procedimiento difiere solo un poco.</p>
+<p><img src="images/maximacel-001.jpg" /></p>
+<p><img src="images/maximacel-002.jpg" /></p>
+<p><img src="images/maximacel-003.jpg" /></p>
+<p><img src="images/maximacel-004.jpg" /></p>
+<p><img src="images/maximacel-005.jpg" /></p>
 </div>
 </div>
 </div>

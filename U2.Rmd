@@ -351,9 +351,77 @@ $$
 1080x^5+960x^4+1440x^4+1280x^3-360x^2-320x
 $$
 
+Simplificamos por términos semejantes:
 
+$$
+(y')(u')=1080x^5+2400x^4+1280x^3-360x^2-320x
+$$
 
+Y esta es la resṕuesta al ejercicio. 
 
+### Ejercicios
+
+Es importante saber realizar la siguiente serie de ejercicios, como mera práctica. 
+
+### Uso de aplicaciones
+
+Me permito comentarles sobre la necesidad de saber utilizar aplicaciones que permiten resolver expresiones algebraicas y derivadas. Con el importante desarrollo de dispositivos de cómputo y móviles, es curioso que no les demos un uso también «académico» a los mismos. Enseguida les comparto los enlaces de descarga para el programa _Maxima_, el cual puede ser instalado en computadora y teléfono celular. También les muestro algunos comandos sencillos para poder corroborar sus respuestas a los ejercicios propuestos.
+
+#### Descargas
+
+Les comparto los enlaces de la aplicación Maxima:
+
+![](images/maxima-logo.png)
+
+[Enlace para descargar Maxima para computadora Windows](https://sourceforge.net/projects/maxima/files/Maxima-Windows/5.43.2-Windows/)
+
+Hay dos versiones, la de 64 bits y la de 32. Si su computadora trae Windows 8 o 10, la adecuada es la de 64 bits. Si trae Windows XP o 7, es muy probable que requiera la versión de 32 bits.
+
+[Enlace para la app Maxima en Google Play](https://play.google.com/store/apps/details?id=jp.yhonda&feature=search_result#?t=W251bGwsMSwxLDEsImpwLnlob25kYSJd)
+
+#### Ejemplos
+
+Resolver expresiones algebraicas y derivadas en Maxima es bastante sencillo. La interfaz es muy simple, y todo es con base en comandos escritos que no son complejos. Veamos cómo simplificar y resolver tres ejercicios de cierta dificultad.
+
+Comenzamos:
+
+1. Derivar $f(x)=7x^3-4x^2+8x-10$:
+
+__Computadora__ Ejecutamos la aplicación, cuya pantalla de bienvenida es una pequeña ventana de bienvenida que podemos cerrar. Enseguida se nos muestra la interfaz, que contiene un guión bajo que parpadea, justo donde señala el cursor en la siguiente imagen:
+
+![](images/maxima-001.png)
+
+Ahí comenzaremos a escribir nuestra función, tomando en cuenta de que escribiremos ':=' en lugar de solamente poner un '='; además debemos escribir un asterisco entre cada coeficiente y su respectiva variable (Maxima representa el asterisco con un punto en medio); las potencias se escriben con el acento circunflejo __^__ (en el teclado español latinoamericano se consigue con la combinación de teclas 'Alt Gr + {' y enseguida se presiona la tecla de 'Espacio'); y al final cerraremos con un ';'. Se muestra la manera correcta en la siguiente imagen:
+
+![](images/maxima-002.png)
+
+Presionamos la combinación de teclas 'Control + Enter'. Debería aparecer algo así:
+
+![](images/maxima-003.png)
+
+Notemos que la expresión que capturamos es definida por '(%i1)', lo cual significa _Entrada 1_. Mientras que lo que devuelve Maxima es denotado como '(%o1)', lo que significa que es la _Salida 1_. 
+
+Ahora derivaremos esta función con el comando 'diff':
+
+'''
+diff(f(x),x);
+'''
+
+Este comando requiere la función a derivar primero, la cual ya definimos arriba; y después de la coma la variable sobre la que va a derivar, que en este caso es la $x$. Se muestra la pantalla en Maxima:
+
+![](images/maxima-004.png)
+
+__Móvil__ El procedimiento difiere solo un poco. 
+
+![](images/maximacel-001.jpg)
+
+![](images/maximacel-002.jpg)
+
+![](images/maximacel-003.jpg)
+
+![](images/maximacel-004.jpg)
+
+![](images/maximacel-005.jpg)
 
 
 

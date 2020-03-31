@@ -379,15 +379,15 @@ Hay dos versiones, la de 64 bits y la de 32. Si su computadora trae Windows 8 o 
 
 [Enlace para la app Maxima en Google Play](https://play.google.com/store/apps/details?id=jp.yhonda&feature=search_result#?t=W251bGwsMSwxLDEsImpwLnlob25kYSJd)
 
-#### Ejemplos
-
-Resolver expresiones algebraicas y derivadas en Maxima es bastante sencillo. La interfaz es muy simple, y todo es con base en comandos escritos que no son complejos. Veamos cómo simplificar y resolver tres ejercicios de cierta dificultad.
+Resolver expresiones algebraicas y derivadas en Maxima es bastante sencillo. La interfaz es muy simple, y todo es con base en comandos escritos que no son complejos. Veamos cómo derivar una función, tanto en computadora como en el teléfono móvil.
 
 Comenzamos:
 
-1. Derivar $f(x)=7x^3-4x^2+8x-10$:
+#### Ejemplo a computadora
 
-__Computadora__ Ejecutamos la aplicación, cuya pantalla de bienvenida es una pequeña ventana de bienvenida que podemos cerrar. Enseguida se nos muestra la interfaz, que contiene un guión bajo que parpadea, justo donde señala el cursor en la siguiente imagen:
+Derivar $f(x)=7x^3-4x^2+8x-10$:
+
+Ejecutamos la aplicación, cuya pantalla de bienvenida es una pequeña ventana de bienvenida que podemos cerrar. Enseguida se nos muestra la interfaz, que contiene un guión bajo que parpadea, justo donde señala el cursor en la siguiente imagen:
 
 ![](images/maxima-001.png)
 
@@ -411,17 +411,35 @@ Este comando requiere la función a derivar primero, la cual ya definimos arriba
 
 ![](images/maxima-004.png)
 
-__Móvil__ El procedimiento difiere solo un poco. 
+Para más ejemplos, se sugieren los siguientes videos alojados en YouTube:
+
+[Cálculo de una derivada muy sencilla](https://youtu.be/QEMwY_txQnI)
+
+#### Ejemplo con móvil
+
+Derivar $f(x)=7x^3-4x^2+8x-10$:
+
+El procedimiento difiere solo un poco. Mediante el teclado del sistema _Android_ deben escribirse las expresiones. En la siguiente imagen se muestra la pantalla de bienvenida de la aplicación.
 
 ![](images/maximacel-001.jpg)
 
+En este caso resolveremos la misma expresión que con la computadora: $f(x)=7x^3-4x^2+8x-10$. La introducimos cuidando de escribir asteriscos entre cada coeficiente y su variable, así como un acento circunflejo para las potencias:
+
 ![](images/maximacel-002.jpg)
+
+Le damos a 'Enter' y Maxima ya nos muestra la expresión con un mejor formato:
 
 ![](images/maximacel-003.jpg)
 
+Ya que definimos la función, podemos derivarla con el comando 'diff(función_a_derivar, variable_sobre_la_que_se_deriva)':
+
 ![](images/maximacel-004.jpg)
 
+Damos a 'Enter'y ya tenemos nuestra función derivada:
+
 ![](images/maximacel-005.jpg)
+
+
 
 
 

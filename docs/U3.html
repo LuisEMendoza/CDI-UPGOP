@@ -355,7 +355,9 @@ $(document).ready(function () {
 <div id="regla-1-integral-de-una-constante" class="section level3">
 <h3>Regla 1: Integral de una constante</h3>
 <p>Al contrario que en la derivada, la cual vuelve nula una constante, la integral le agrega la variable indicada en el diferencial. La regla enunciada queda como sigue:</p>
+<blockquote>
 <p>Si <span class="math inline">\(\int{f&#39;(x)\ dx}\)</span> y <span class="math inline">\(f&#39;(x)=k\ dx\)</span>, entonces <span class="math inline">\(f(x)=kx+C\)</span></p>
+</blockquote>
 <div id="ejemplo" class="section level4">
 <h4>Ejemplo</h4>
 <p><span class="math display">\[
@@ -365,8 +367,21 @@ $(document).ready(function () {
 <p><span class="math display">\[
 \int{10\ dx}=10x 
 \]</span></p>
-<p>Pero ¿qué pasaría si la función fuera <span class="math inline">\(f(x)=10x+8\)</span>? Pues al derivarla se convierte precisamente en <span class="math inline">\(f&#39;(x)=10\ dx\)</span>. El 8 desapareció. Al integrar la función no hay manera de recuperarla: <span class="math inline">\(\int{10\ dx}=10x\)</span>, justo como en la anterior. Pero sí es posible dejar indicado que junto al <span class="math inline">\(10x\)</span> había una constante. Esta es precisamente <span class="math inline">\(C\)</span>.</p>
+<p>Pero ¿qué pasaría si la función fuera <span class="math inline">\(f(x)=10x+8\)</span>? Pues al derivarla se convierte precisamente en <span class="math inline">\(f&#39;(x)=10\ dx\)</span>. El 8 desapareció. Al integrar la función no hay manera de recuperarla: <span class="math inline">\(\int{10\ dx}=10x\)</span>, justo como en la anterior. Pero sí es posible dejar indicado que junto al <span class="math inline">\(10x\)</span> había una constante. Esta es precisamente <span class="math inline">\(C\)</span>.Por lo tanto, al momento de resolver una integral, hay que incluir siempre al final la constante de integración <span class="math inline">\(C\)</span>, con la excepción de las integrales definidas, las cuales las abordaremos más delante.</p>
 </div>
+</div>
+<div id="regla-2.-integral-de-una-constante-y-una-variable" class="section level3">
+<h3>Regla 2. Integral de una constante y una variable</h3>
+<p>Si <span class="math inline">\(f(x)=kx^n\)</span>, entonces: <span class="math display">\[
+\int{kx^n}dx=\frac{kx^{n+1}}{n+1}+C
+\]</span></p>
+</div>
+<div id="regla-3.-integral-de-una-suma-o-diferencia-de-términos" class="section level3">
+<h3>Regla 3. Integral de una suma (o diferencia) de términos</h3>
+<p><span class="math display">\[
+\int{ \left[ A&#39;(x)+B&#39;(x) \right]} dx=\int{A&#39;(x)}dx+\int{B&#39;(x)}dx\\
+=A(x)+B(x)+C
+\]</span></p>
 </div>
 </div>
 

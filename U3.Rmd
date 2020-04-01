@@ -30,7 +30,7 @@ Las reglas son relativamente sencillas de seguir. Sin embargo, existe un concept
 
 Al contrario que en la derivada, la cual vuelve nula una constante, la integral le agrega la variable indicada en el diferencial. La regla enunciada queda como sigue:
 
-Si $\int{f'(x)\ dx}$ y $f'(x)=k\ dx$, entonces $f(x)=kx+C$
+> Si $\int{f'(x)\ dx}$ y $f'(x)=k\ dx$, entonces $f(x)=kx+C$
 
 #### Ejemplo
 
@@ -44,7 +44,23 @@ $$
 \int{10\ dx}=10x 
 $$
 
-Pero ¿qué pasaría si la función fuera $f(x)=10x+8$? Pues al derivarla se convierte precisamente en $f'(x)=10\ dx$. El 8 desapareció. Al integrar la función no hay manera de recuperarla: $\int{10\ dx}=10x$, justo como en la anterior. Pero sí es posible dejar indicado que junto al $10x$ había una constante. Esta es precisamente $C$.
+Pero ¿qué pasaría si la función fuera $f(x)=10x+8$? Pues al derivarla se convierte precisamente en $f'(x)=10\ dx$. El 8 desapareció. Al integrar la función no hay manera de recuperarla: $\int{10\ dx}=10x$, justo como en la anterior. Pero sí es posible dejar indicado que junto al $10x$ había una constante. Esta es precisamente $C$.Por lo tanto, al momento de resolver una integral, hay que incluir siempre al final la constante de integración $C$, con la excepción de las integrales definidas, las cuales las abordaremos más delante.
+
+
+### Regla 2. Integral de una constante y una variable
+
+Si $f(x)=kx^n$, entonces: 
+$$
+\int{kx^n}dx=\frac{kx^{n+1}}{n+1}+C
+$$
+
+### Regla 3. Integral de una suma (o diferencia) de términos
+
+$$
+\int{ \left[ A'(x)+B'(x) \right]} dx=\int{A'(x)}dx+\int{B'(x)}dx\\
+=A(x)+B(x)+C
+$$
+
 
 
 

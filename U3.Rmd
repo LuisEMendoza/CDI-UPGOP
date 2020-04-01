@@ -49,9 +49,21 @@ Pero ¿qué pasaría si la función fuera $f(x)=10x+8$? Pues al derivarla se con
 
 ### Regla 2. Integral de una constante y una variable
 
-Si $f(x)=kx^n$, entonces: 
+Si $f(x)=kx^n$ y $n\neq -1$, entonces: 
 $$
 \int{kx^n}dx=\frac{kx^{n+1}}{n+1}+C
+$$
+
+#### Ejemplo
+
+$$
+\int{4x^6}dx
+$$
+
+Aquí $k=4$ y $n=6$, por lo tanto:
+
+$$
+\int{4x^6}dx=\frac{4x^{6+1}}{6+1}+C=\frac{4x^7}{7}+C
 $$
 
 ### Regla 3. Integral de una suma (o diferencia) de términos
@@ -60,6 +72,322 @@ $$
 \int{ \left[ A'(x)+B'(x) \right]} dx=\int{A'(x)}dx+\int{B'(x)}dx\\
 =A(x)+B(x)+C
 $$
+
+#### Ejemplo
+
+Supongamos la integral de:
+
+$$
+\int{\left(5x^6+3x^8\right)}dx
+$$
+
+Podemos resolverla como si fueran dos integrales separadas, utilizando la Regla 2:
+
+$$
+\int{5x^6}dx+\int{3x^8}dx=\frac{5x^{6+1}}{6+1}+C_1+\frac{3x^{8+1}}{8+1}+C_2\\
+=\frac{5x^7}{7}+\frac{3x^9}{9}+C
+$$
+
+Observemos que, aunque en teoría son dos constantes de integración, al final las unimos en una sola.
+
+### Regla 4. Excepción de la regla 2
+
+$$
+\int{x^{-1}}dx=ln(x)+C
+$$
+
+En la regla 2 se especificó que la potencia de $x$ no podía ser $-1$, esto se debe a que al aplicar la regla, el exponente se volvería $0$. Eso no es deseable. Sin embargo, la regla es bastante sencilla.
+
+#### Ejemplo
+
+$$
+\int{7x^{-1}}dx=7ln(x)+C
+$$
+
+Notemos que habiendo $x^{-1}$, su integral es $ln(x)$, y si existe una constante multiplicando a $x^{-1}$, simplemente se pasa multiplicando al $ln$. Este caso también puede presentarse de la forma:
+
+$$
+\int{\frac{4}{x}}dx
+$$
+
+Recordemos que tener una variable en un denominador es equivalente a tener dicha variable con exponente negativo:
+
+$$
+\frac{1}{x}=x^{-1}
+$$
+
+Por lo tanto,
+
+$$
+\int{\frac{4}{x}}dx=\int{4x^{-1}}dx=4ln(x)+C
+$$
+
+### Regla 5. Integral del número de Euler
+
+$$
+\int{e^x}dx=e^x+C
+$$
+
+#### Ejemplo
+
+Esta es muy sencilla. Solo asegurémonos de que $e$ esté elevada única y exclusivamente a la potencia variable $x$ (puede ser una $y$ o una $w$ o la variable que sea, pero tiene que coincidir con el diferencial, en este caso $dx$). Cualquier otra potencia diferente, cancela esta regla. Veamos un ejemplo sencillo:
+
+$$
+\int{10e^x}dx
+$$
+
+Notemos que la potencia es $x$, y el coeficiente $10$ no altera en absoluto la regla. Resolvemos como sigue:
+
+$$
+\int{10e^x}dx=10e^x+C
+$$
+
+Es como si no pasara nada. ¡Pero solo funciona si la potencia de $e$ es la variable $x$ sola!
+
+### Regla 6. Integral de la potencia
+
+$$
+\int{\left[f(x) \right]^nf'(x)}dx=\frac{\left[f(x) \right]^{n+1}}{n+1}+C
+$$
+
+Entramos a cuestiones un poco más complejas. En este caso, la regla implica que para poder integrar una función elevada a una potencia, es necesario que dicha función esté acompañada de su propia derivada. Si no se encuentra la derivada, tenemos dos opciones: forzar a que esté la derivada dentro de lo numéricamente posible o considerar a la función como no integrable. Veamos cómo se resuelven los tres casos:
+
+#### Ejemplo
+
+__Solución directa__ Este caso ocurre cuando la derivada de la función que está elevada a una potencia sí se encuentra completa en la integral.
+
+$$
+\int{\left( 4x^3-2x^2 \right)^3} \left( 12x^2-4x \right)dx
+$$
+
+Es fácil notar que se encuentran dos factores en la integral, que uno de ellos es una función elevada al cubo $\left( 4x^3-2x^2 \right)$ y el otro es la derivada de dicha función $\left( 12x^2-4x \right)$. Por lo tanto, esto tiene solución directa:
+
+$$
+\int{\left( 4x^3-2x^2 \right)^3} \left( 12x^2-4x \right)dx\\
+=\frac{\left( 4x^3-2x^2 \right)^{3+1}}{3+1}=\frac{\left( 4x^3-2x^2 \right)^{4}}{4}+C
+$$
+
+__Completar el diferencial__ Esta expresión comenzará a volverse bastante recurrente. Completar el diferencial es algo que en teoría, deberíamos tratar de hacer siempre que veamos que no tenemos la derivada de la función en la integral. Pero es importante mencionar que no siempre se podrá realizar. Es decir, el diferencial puede completarse siempre y cuando haga falta (o sobre) una constante, pero nunca cuando haga falta la variable o potencia de la propia variable.
+
+- __Completando con una multiplicación__ Veamos el siguiente caso:
+
+$$
+\int{\left(2x-6\right)^4}dx
+$$
+
+Después de una inspección rápida, debemos darnos cuenta que la derivada de la función elevada a la cuarta potencia es simplemente $2$. Sin embargo, ese $2$ _no_ se encuentra multiplicando a la función elevada. Por lo tanto, el diferencial no está completo. Pero como se mencionó anteriormente, al tratarse de una constante, sí podemos completarlo mediante un artilugio aritmético: metamos ese $2$ con calzador, pero siempre tratando de no alterar la integral:
+
+$$
+\int{\left(2x-6\right)^4} \left(\frac{2}{2} \right)dx
+$$
+
+¿Cómo podemos introducir el $2$ sin alterar la integral? Fácil, que no venga solo, así que lo incluiremos como una fracción que en esencia, es igual a $1$. De dicha fracción tomamos el $2$ que nos interesa y lo que sobre lo mandamos fuera de la integral, recordando que:
+
+$$
+\frac{2}{2}=\frac{1}{2}\cdot2
+$$
+
+Así que simplemente:
+
+$$
+\int{\left(2x-6\right)^4} \left(\frac{2}{2} \right)dx=\int{\left(2x-6\right)^4} \left(\frac{1}{2} \right)\cdot(2)dx\\
+=\frac{1}{2}\int{(2x-6)^4}\ 2dx
+$$
+
+Con el $2$, el diferencial ya está completo, por lo que ya podemos olvidarnos de él e integramos como lo marca la regla 6:
+
+$$
+\left( \frac{1}{2}\right)\frac{(2x-6)^{4+1}}{4+1}+C=\left( \frac{1}{2}\right)\frac{(2x-6)^5}{5}+C
+$$
+
+Al final reducimos la expresión:
+
+$$
+\frac{(1)(2x-6)^5}{(2)5}+C=\frac{\left(2x-6\right)^5}{10}+C
+$$
+
+- __Completando con una división__ También puede completarse el diferencial con una división, supongamos el siguiente caso:
+
+$$
+\int{\left( x^2+x \right)^8}\ (8x+4)dx
+$$
+
+Como podemos notarlo, tenemos una función elevada a la octava potencia. Eso nos obliga a tener que contar con la derivada de dicha función para poder integrarla. Pero resulta que su derivada es $2x+1$, teniendo nosotros $8x+4$. Después de una breve inspección, podríamos darnos cuenta de que la derivada que tenemos es el cuatro veces la que necesitamos, por lo que debemos dividirla entre $4$ (y no multiplicarla, como lo hicimos en el ejemplo anterior). Así que procedemos introduciendo la fracción necesaria y luego quedándonos con la parte que requerimos: el denominador
+
+$$
+\int{\left( x^2+x \right)^8}\ \left(\frac{4}{4} \right) (8x+4)dx
+$$
+
+$$
+\int{\left( x^2+x \right)^8}\ (4)\cdot\left(\frac{1}{4} \right) (8x+4)dx=\\
+\int{\left( x^2+x \right)^8}\ (4)\cdot\left(\frac{(1)(8x+4)}{(4)} \right) dx
+$$
+
+Sacamos el $4$ de la integral y reducimos la parte interna de la misma:
+
+$$
+4\int{\left( x^2+x \right)^8}\left(\frac{8x+4}{4} \right) dx=\\
+4\int{\left( x^2+x \right)^8}\left(2x+1 \right) dx
+$$
+
+Tenemos el diferencial completo, ya podemos integrar:
+
+$$
+4\cdot \frac{\left(x^2+x \right)^{8+1}}{8+1}+C=\\
+4\cdot \frac{\left(x^2+x \right)^9}{9}+C=\\
+\frac{4\left(x^2+x \right)^9}{9}+C
+$$
+
+__No integrable__ En muchas ocasiones no podremos completar el diferencial, ya sea porque falta la variable en el mismo o porque no tenemos la potencia requerida. Veamos ambos casos:
+
+- __Falta la variable__ En el siguiente caso el diferencial no puede completarse:
+
+$$
+\int{\left( 3x^2+5 \right)^4}dx
+$$
+
+El diferencial debe estar acompañado de la derivada, que en este caso es $6x$, o debería tener por lo menos la variable $x$ y ya nosotros lo completaríamos con los procedimientos vistos anteriormente. Pero no es el caso, así que esta expresión no es integrable con las reglas de integración vistas.
+
+- __Falta una potencia__ Veamos ahora el caso en el que sí está la variable, pero no la potencia deseada.
+
+$$
+\int{\left(4x^4-10 \right)^5}x^2dx
+$$
+
+Deberíamos notar que la derivada de la función elevada es $16x^3$. Y en el diferencial solo tenemos $x^2$. Nos hace falta la potencia necesaria, por lo tanto concluimos que la función no es integrable mediante las reglas de integración ya vistas.
+
+### Regla 7. Extensión de la Regla 5
+
+$$
+\int{f'(x)e^{f(x)}}dx=e^{f(x)}+C
+$$
+
+Este tipo de integrales también está sujeto al hecho de que debe estar completo el diferencial para poder resolverlo. Veamos unos ejemplos.
+
+#### Ejemplo
+
+__Solución directa__
+
+$$
+\int{2xe^{x^2}}dx
+$$
+
+El diferencial debe estar completo, lo que implica que la derivada del exponente debe estar multiplicando a la función $e$. La derivada del exponente $x^2$ es $2x$, es decir:
+
+$$
+f(x)=x^2\\
+\text {y}\\
+f'(x)=2x
+$$
+
+La derivada sí se encuentra multiplicando a la función exponencial, así que integramos:
+
+$$
+\int{2xe^{x^2}}dx=e^{x^2}+C
+$$
+
+__Diferencial incompleto__
+
+Supongamos la siguiente integral:
+
+$$
+\int{x^3e^{x^4}}dx
+$$
+
+La derivada del exponente $x^4$ es $4x^3$. Tenemos a $x^3$, así que nos hace falta la constante $4$:
+
+$$
+f(x)=x^4\\
+\text{y}\\
+f'(x)=4x^3
+$$
+
+Nos falta un $4$, así que debemos completar el diferencial:
+
+$$
+\int{x^3e^{x^4}}dx=\int{\left(\frac{4}{4}\right)x^3e^{x^4}}dx\\
+\int{\left(\frac{1}{4}\right)(4)x^3e^{x^4}}dx= \left(\frac{1}{4}\right)\int{4x^3e^{x^4}}dx\\
+\left(\frac{1}{4}\right)e^{x^4}+C=\frac{e^{x^4}}{4}+C
+$$
+
+### Regla 8. Integral de un cociente
+
+$$
+\int{\frac{f'(x)}{f(x)}}dx=ln(f(x))+C
+$$
+
+#### Ejemplo
+
+También en esta regla puede presentarse el caso de una solución directa y también el diferencial incompleto. Veamos 
+
+__Solución directa__
+
+$$
+\int{\frac{8x}{4x^2-12}}dx
+$$
+
+Esta regla nos pide que el numerador sea la derivada del denominador. Vemos que:
+
+$$
+f(x)=4x^2-12\ \\
+f'(x)=8x;\\
+\text{se cumple que}:\\
+\frac{f'(x)}{f(x)}
+$$
+
+Podemos integrar directamente:
+
+$$
+\int{\frac{8x}{4x^2-12}}dx=ln(4x^2-12)+C
+$$
+
+__Completar el diferencial__
+
+$$
+\int{\frac{x-1}{4x^2-8x+1}}dx
+$$
+
+Aquí debemos observar que:
+
+$$
+f(x)=4x^2-8x+1\\
+f'(x)=8x-8
+$$
+
+Pero en lugar de tener $8x-8$ en el numerador, tenemos $x-1$. Debemos completar el diferencial entonces. Deberíamos notar que $x-1$ puede convertirse en $8x-8$ si simplemente lo multiplicamos por $8$:
+
+$$
+\int{\frac{x-1}{4x^2-8x+1}}dx=\int{\left(\frac{8}{8}\right)\frac{x-1}{4x^2-8x+1}}dx\\
+=\int{\left(\frac{1}{8}\right)\frac{(8)(x-1)}{4x^2-8x+1}}dx\\
+=\int{\left(\frac{1}{8}\right)\frac{8x-8}{4x^2-8x+1}}dx
+$$
+
+A estas alturas tenemos ya el diferencial completo. Procedemos a integrar:
+
+$$
+\int{\left(\frac{1}{8}\right)\frac{8x-8}{4x^2-8x+1}}dx=\left(\frac{1}{8}\right)ln(4x^2-8x+1)+C
+$$
+
+### Integración por partes (opcional)
+
+No estamos ante una regla como tal, más bien estamos ante una técnica especial. Se aplica a funciones compuestas por dos factores que no pueden reducirse algebraicamente, por lo que las reglas de integración no funcionan del todo. A continuación veremos esta técnica que podría considerarse un poco de tanteo, es decir, no siempre dará buenos resultados y depende de algo de destreza. La regla queda como sigue:
+
+$$
+\int{uv'}dx=uv-\int{vu'}dx
+$$
+
+La clave está en que la integral resultante $\int{vu'}dx$ sea integrable. 
+
+
+
+
+
+
+
+
+
+
+
 
 
 

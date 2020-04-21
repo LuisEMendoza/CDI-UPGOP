@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Aplicaciones del Cálculo Diferencial</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Inicio </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Contenido
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Unidades</li>
+    <li>
+      <a href="encuadre.html">Encuadre</a>
+    </li>
+    <li>
+      <a href="U1.html">Unidad 1</a>
+    </li>
+    <li>
+      <a href="U2.html">Unidad 2</a>
+    </li>
+    <li>
+      <a href="U3.html">Unidad 3</a>
+    </li>
+    <li class="dropdown-header">Unidad 4</li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Recursos 
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">UNIDADES</li>
+    <li class="dropdown-header">Unidad 1</li>
+    <li>
+      <a href="EP1-U1.html">EP1</a>
+    </li>
+    <li>
+      <a href="EP1-U2.html">EP2</a>
+    </li>
+    <li class="dropdown-header">Unidad 2</li>
+    <li class="dropdown-header">Unidad 3</li>
+    <li class="dropdown-header">Unidad 4</li>
+  </ul>
+</li>
+<li>
+  <a href="contacto.html">Contacto</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Aplicaciones del Cálculo Diferencial</h1>
+
+</div>
+
+
+<div id="aplicaciones-al-ingreso" class="section level2">
+<h2>Aplicaciones al ingreso</h2>
+<p>Nos vamos a centrar en la maximización de los ingresos para una empresa u organización. Recordemos que el dinero que entra a una organización por la venta de productos o la prestación de servicios recibe el nombre de <em>ingreso</em>. Y la manera fundamental de calcular el ingreso total conseguido con la venta de un producto (o servicio) es:</p>
+<p><span class="math display">\[
+\text {Ingreso total} = \text {(precio unitario)(cantidad vendida)}
+\]</span></p>
+<p>En esta expresión se supone que el precio de venta es igual para todas las unidades vendidas. Cabe mencionar que la manera en la que se obtiene esta expresión es bastante obvia. Nuestros ingresos por venta dependen de cuántas unidades vendamos y su precio. Veamos algún ejemplo:</p>
+<div id="ejemplo" class="section level3">
+<h3>Ejemplo</h3>
+<p>La demanda del producto de una compañía varía según el precio que le fije al producto. La compañía ha descubierto mediante un estudio (cuyo contenido y naturaleza se escapa a este ejemplo), que el ingreso total anual <span class="math inline">\(R\)</span> (expresado en miles de dólares) es una función del precio <span class="math inline">\(p\)</span> (en dólares). En concreto,</p>
+<p><span class="math display">\[
+R = f(p) = -50p^2 + 500p
+\]</span></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Determine el precio que debería cobrarse con objeto de maximizar el ingreso total.</p></li>
+<li><p>¿Cuál es el valor máximo del ingreso total anual?</p></li>
+</ol>
+<div id="solución" class="section level4">
+<h4>Solución</h4>
+<p>La función de ingreso es cuadrática y su gráfica es una parábola cóncava hacia abajo, tal como la que vemos debajo.</p>
+<p><img src="images/parabola-001.png" /></p>
+<ol style="list-style-type: lower-alpha">
+<li>De este modo, el valor máximo de los ingresos <span class="math inline">\(R\)</span> ocurrirá en el vértice, impidiendo que el precio se dispare, ya que de hacerlo, las ventas bajarían. Para saber cuándo se alcanza el máximo, debemos seguir una serie de pasos. El procedimiento requiere que derivemos varias veces. El inicio implica calcular la primera derivada de la función de ingreso:</li>
+</ol>
+<p><span class="math display">\[
+R = f(p) = -50p^2 + 500p\\
+R&#39; = f&#39;(p) = -100p + 500
+\]</span></p>
+<p>Ahora igualamos esta derivada a <span class="math inline">\(0\)</span> y la despejamos para conocer el valor de <span class="math inline">\(p\)</span>:</p>
+<p><span class="math display">\[
+-100p+500=0\\
+-100p=0-500\\
+-100p=-500
+\]</span></p>
+<p>Podemos quitar el signo negativo, ya que ambos miembros de la expresión lo tienen. Resolvemos para <span class="math inline">\(p\)</span>:</p>
+<p><span class="math display">\[
+-100p=-500\\
+100p=500\\
+p=\frac{500}{100}\\
+p=5
+\]</span></p>
+<p>Este <span class="math inline">\(5\)</span> implica que existe un punto crítico, es decir, un momento en el que la curva de la gráfica cambia de sentido o, dicho de otra manera, la cima de la curva se encuentra en el precio <span class="math inline">\(5\)</span>, lo cual puede ser comprobado con la curva. Para saber que este valor es un máximo, debemos calcular la segunda derivada de <span class="math inline">\(R\)</span>:</p>
+<p><span class="math display">\[
+R = f(p) = -50p^2 + 500p\\
+R&#39; = f&#39;(p) = -100p + 500\\
+R&#39;&#39;=f&#39;&#39;(p)=-100
+\]</span></p>
+<p>La regla para distinguir un valor máximo de un mínimo es el signo de la segunda derivada. Si es negativo, tenemos un máximo. Si es positivo, es un mínimo. En este caso tenemos un negativo, por lo tanto un valor máximo ocurre cuando <span class="math inline">\(p=5\)</span>.</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>El valor máximo de <span class="math inline">\(R\)</span> se alcanza cuando el precio es igual a <span class="math inline">\(5\)</span>. Por lo tanto, debemos sustituir este valor en la función original <span class="math inline">\(R\)</span>:</li>
+</ol>
+<p><span class="math display">\[
+R_{max}=f(5)=-50(5)^2 + 500(5)\\
+=-50(25)+2500=-1,250+2500\\
+=1,250
+\]</span></p>
+<p>Esto se interpreta sabiendo que el ingreso total anual se maximiza a un valor de <span class="math inline">\(\$1,250\)</span>, siempre y cuando el precio de venta sea de <span class="math inline">\(\$5\)</span>.</p>
+</div>
+</div>
+<div id="ejercicio" class="section level3">
+<h3>Ejercicio</h3>
+<p>Una compañía ha descubierto que el ingreso total es una función del precio fijado a su producto. En concreto, la función del ingreso total es</p>
+<p><span class="math display">\[
+R=f(p)=-10p^2+1,750p
+\]</span></p>
+<p>donde <span class="math inline">\(p\)</span> es el precio en dólares.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Determine el precio <span class="math inline">\(p\)</span> que produce el máximo ingreso total.</p></li>
+<li><p>¿Cuál es el valor máximo del ingreso total?</p></li>
+</ol>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
